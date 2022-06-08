@@ -7,6 +7,7 @@
 src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 </a>
 [![Visits](https://komarev.com/ghpvc/?username=guinetik&label=Profile%20views&color=blueviolet&style=flat&label=Visitors:)](https://www.github.com/guinetik/)
+[![wakatime](https://wakatime.com/badge/user/bd313e2a-0621-4893-8b72-922274e316de.svg)](https://wakatime.com/@bd313e2a-0621-4893-8b72-922274e316de)
 
 ### Hi there 👋
 ##### about.me
@@ -56,6 +57,11 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
     <img align="center"
          height="150"
          src="https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=6&theme=nightowl&layout=compact&count_private=true&card_width=300" />
+  </a>
+  <a href="https://github.com/anuraghazra/convoychat">
+    <img align="center"
+         height="150"
+         src="https://github-readme-stats.vercel.app/api/wakatime?username=guinetik&langs_count=6&theme=nightowl&layout=compact&count_private=true&card_width=300" />
   </a>
   <p></p>
   <img width="83%" src="https://github-readme-streak-stats.herokuapp.com/?user=guinetik&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=20232a" alt="teudm" />
