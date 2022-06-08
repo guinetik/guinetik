@@ -23,13 +23,13 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 - 📫 Hit me up at: [twitter.com/guinetik](https://twitter.com/guinetik)
 - 🕹️ I'm into tech, games, infotainment and geek culture
 
-![languages](https://img.shields.io/static/v1?label=&message=languages:&color=111&style=flat-square)
+- ![languages](https://img.shields.io/static/v1?label=&message=languages:&color=blueviolet&style=flat-square)
 ![java](https://img.shields.io/static/v1?logo=java&label=&message=java&color=36465D&logoColor=AAA&style=flat-square)
 ![javascript](https://img.shields.io/static/v1?logo=javascript&label=&message=javascript&color=36465D&logoColor=AAA&style=flat-square&link=)
 ![typescript](https://img.shields.io/static/v1?logo=typescript&label=&message=typescript&color=36465D&logoColor=AAA&style=flat-square&link=)
 ![python](https://img.shields.io/static/v1?logo=python&label=&message=python&color=36465D&logoColor=AAA&style=flat-square)
 
-![libs](https://img.shields.io/static/v1?label=&message=libs:&color=111&style=flat-square)
+- ![libs](https://img.shields.io/static/v1?label=&message=libs:&color=important&style=flat-square)
 ![spring](https://img.shields.io/static/v1?logo=springboot&label=&message=spring&color=36465D&logoColor=AAA&style=flat-square)
 ![angular](https://img.shields.io/static/v1?logo=angular&label=&message=angular&color=36465D&logoColor=AAA&style=flat-square)
 ![react](https://img.shields.io/static/v1?logo=react&label=&message=react&color=36465D&logoColor=AAA&style=flat-square)
@@ -38,7 +38,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 ![express](https://img.shields.io/static/v1?logo=nodedotjs&label=&message=express&color=36465D&logoColor=AAA&style=flat-square)
 ![tensorflow](https://img.shields.io/static/v1?logo=tensorflow&label=&message=tensorflow&color=36465D&logoColor=AAA&style=flat-square)
 
-![tools](https://img.shields.io/static/v1?label=&message=tools:&color=111&style=flat-square)
+- ![tools](https://img.shields.io/static/v1?label=&message=tools:&color=critical&style=flat-square)
 ![intellij](https://img.shields.io/static/v1?logo=jetbrains&label=&message=intellij&color=36465D&logoColor=AAA&style=flat-square)
 ![git](https://img.shields.io/static/v1?logo=git&label=&message=git&color=36465D&logoColor=AAA&style=flat-square)
 ![jira](https://img.shields.io/static/v1?logo=jira&label=&message=jira&color=36465D&logoColor=AAA&style=flat-square)
