@@ -50,11 +50,11 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="center" height="160" src="https://github-readme-stats.vercel.app/api?username=guinetik&show_icons=true&theme=nightowl&count_private=true&hide=issues,contribs" />
+    <img align="center" height="150" src="https://github-readme-stats.vercel.app/api?username=guinetik&show_icons=true&theme=nightowl&count_private=true&hide=issues,contribs" />
   </a>
   <a href="https://github.com/anuraghazra/convoychat">
     <img align="center"
-         height="160"
+         height="150"
          src="https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=6&theme=nightowl&layout=compact&count_private=true&card_width=300" />
   </a>
   <p></p>
