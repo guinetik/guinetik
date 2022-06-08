@@ -63,12 +63,20 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 </div>
 
 ##### Repos you'll may like
-<a href="https://github.com/guinetik/python-ds">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=python-ds&theme=nightowl" />
-</a>
-<a href="https://github.com/guinetik/epihack-appgen">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=epihack-appgen&theme=nightowl" />
-</a>
+<div align="center">
+  <a href="https://github.com/guinetik/tempo-cc-backend">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=tempo-cc-backend&theme=nightowl" />
+  </a>
+  <a href="https://github.com/guinetik/python-ds">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=python-ds&theme=nightowl" />
+  </a>
+  <a href="https://github.com/guinetik/sails-studies">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=sails-studies&theme=nightowl" />
+  </a>
+  <a href="https://github.com/guinetik/epihack-appgen">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=epihack-appgen&theme=nightowl" />
+  </a>
+</div>
 
 ##### check out some of my stuff
 <table align="center">
