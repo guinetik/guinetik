@@ -1,13 +1,3 @@
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guinetik/)](https://www.linkedin.com/in/guinetik/)
-[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guinetik@gmail.com)](mailto:guinetik@gmail.com)
-[![Youtube Badge](https://img.shields.io/youtube/channel/views/UCj8l9a39AcNVj_pdtjTmpfw)](https://www.youtube.com/channel/UCj8l9a39AcNVj_pdtjTmpfw)
-[![Stackoverflow](https://github.com/Rishit-dagli/Rishit-dagli/blob/master/badges/stackoverflow.svg)](https://stackoverflow.com/users/1293664/guinetik)
-<a href="https://stackoverflow.com/users/1293664/guinetik" target="_blank">
-<img alt="StackOverflow"
-src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
-</a>
-[![Visits](https://komarev.com/ghpvc/?username=guinetik&label=Profile%20views&color=blueviolet&style=flat&label=Visitors:)](https://www.github.com/guinetik/)
-
 ### Hi there 👋
 ##### about.me
 -	:neckbeard: I'm an eclectic coder with an agnostic view in software engineering. 
@@ -21,6 +11,16 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 - 💬 I'm into `spring framework`, `nodejs`, **data science**, **software engineering**
 - 📫 Hit me up at: [twitter.com/guinetik](https://twitter.com/guinetik)
 - 🕹️ I'm into tech, games, infotainment and geek culture
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guinetik/)](https://www.linkedin.com/in/guinetik/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guinetik@gmail.com)](mailto:guinetik@gmail.com)
+[![Youtube Badge](https://img.shields.io/youtube/channel/views/UCj8l9a39AcNVj_pdtjTmpfw)](https://www.youtube.com/channel/UCj8l9a39AcNVj_pdtjTmpfw)
+[![Stackoverflow](https://github.com/Rishit-dagli/Rishit-dagli/blob/master/badges/stackoverflow.svg)](https://stackoverflow.com/users/1293664/guinetik)
+<a href="https://stackoverflow.com/users/1293664/guinetik" target="_blank">
+<img alt="StackOverflow"
+src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
+</a>
+[![Visits](https://komarev.com/ghpvc/?username=guinetik&label=Profile%20views&color=blueviolet&style=flat&label=Visitors:)](https://www.github.com/guinetik/)
 
 ![languages](https://img.shields.io/static/v1?label=&message=languages:&color=111&style=flat-square)
 ![java](https://img.shields.io/static/v1?logo=java&label=&message=java&color=36465D&logoColor=AAA&style=flat-square)
@@ -50,13 +50,13 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="center" width="47%" src="https://github-readme-stats.vercel.app/api?username=guinetik&show_icons=true&theme=nightowl&count_private=true&hide=issues,contribs&line_height=32" />
+    <img align="center" width="50%" src="https://github-readme-stats.vercel.app/api?username=guinetik&show_icons=true&theme=nightowl&count_private=true" />
   </a>
   <a href="https://github.com/anuraghazra/convoychat">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=6&theme=nightowl&layout=compact&count_private=true" />
+    <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=8&theme=nightowl&layout=compact&count_private=true" />
   </a>
   <p></p>
-  <img width="83%" src="https://github-readme-streak-stats.herokuapp.com/?user=guinetik&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=20232a" alt="guinetik" />
+  <img width="83%" src="https://github-readme-streak-stats.herokuapp.com/?user=guinetik&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=20232a" alt="teudm" />
   
   <img alt="Gráfico de atividades" 
        src="https://activity-graph.herokuapp.com/graph?username=guinetik&bg_color=0D1117&color=8266f2&line=8266f2&point=ba66f2&hide_border=true" />
@@ -65,13 +65,13 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 ##### Repos you'll may like
 <div align="center">
   <a href="https://github.com/guinetik/tempo-cc-backend">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=tempo-cc-backend&theme=nightowl&show_owner=true" />
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=tempo-cc-backend&theme=nightowl" />
   </a>
   <a href="https://github.com/guinetik/python-ds">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=python-ds&theme=nightowl" />
   </a>
   <a href="https://github.com/guinetik/sails-studies">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=sails-studies&theme=nightowl&show_owner=true" />
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=sails-studies&theme=nightowl" />
   </a>
   <a href="https://github.com/guinetik/epihack-appgen">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=epihack-appgen&theme=nightowl" />
