@@ -26,6 +26,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 ![javascript](https://img.shields.io/static/v1?logo=javascript&label=&message=javascript&color=36465D&logoColor=AAA&style=flat-square&link=)
 ![typescript](https://img.shields.io/static/v1?logo=typescript&label=&message=typescript&color=36465D&logoColor=AAA&style=flat-square&link=)
 ![python](https://img.shields.io/static/v1?logo=python&label=&message=python&color=36465D&logoColor=AAA&style=flat-square)
+
 ![libs](https://img.shields.io/static/v1?label=&message=libs:&color=111&style=flat-square)
 ![spring](https://img.shields.io/static/v1?logo=springboot&label=&message=spring&color=36465D&logoColor=AAA&style=flat-square)
 ![angular](https://img.shields.io/static/v1?logo=angular&label=&message=angular&color=36465D&logoColor=AAA&style=flat-square)
