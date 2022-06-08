@@ -1,13 +1,4 @@
-### Hi there 👋  
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guinetik/)](https://www.linkedin.com/in/guinetik/)
-[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guinetik@gmail.com)](mailto:guinetik@gmail.com)
-[![Youtube Badge](https://img.shields.io/youtube/channel/views/UCj8l9a39AcNVj_pdtjTmpfw)](https://www.youtube.com/channel/UCj8l9a39AcNVj_pdtjTmpfw)
-[![Stackoverflow](https://github.com/Rishit-dagli/Rishit-dagli/blob/master/badges/stackoverflow.svg)](https://stackoverflow.com/users/1293664/guinetik)
-<a href="https://stackoverflow.com/users/1293664/guinetik" target="_blank">
-<img alt="StackOverflow"
-src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
-</a>
-[![Visits](https://komarev.com/ghpvc/?username=gislainecosta&label=Profile%20views&color=blueviolet&style=flat&label=Visitors:)](https://www.linkedin.com/in/guinetik/)
+### Hi there 👋
 ##### about.me
 -	:neckbeard: I'm an eclectic coder with an agnostic view in software engineering. 
 - 🌎 I live in Recife/Pernambuco - Brazil
@@ -20,6 +11,16 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 - 💬 I'm into `spring framework`, `nodejs`, **data science**, **software engineering**
 - 📫 Hit me up at: [twitter.com/guinetik](https://twitter.com/guinetik)
 - 🕹️ I'm into tech, games, infotainment and geek culture
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guinetik/)](https://www.linkedin.com/in/guinetik/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guinetik@gmail.com)](mailto:guinetik@gmail.com)
+[![Youtube Badge](https://img.shields.io/youtube/channel/views/UCj8l9a39AcNVj_pdtjTmpfw)](https://www.youtube.com/channel/UCj8l9a39AcNVj_pdtjTmpfw)
+[![Stackoverflow](https://github.com/Rishit-dagli/Rishit-dagli/blob/master/badges/stackoverflow.svg)](https://stackoverflow.com/users/1293664/guinetik)
+<a href="https://stackoverflow.com/users/1293664/guinetik" target="_blank">
+<img alt="StackOverflow"
+src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
+</a>
+[![Visits](https://komarev.com/ghpvc/?username=guinetik&label=Profile%20views&color=blueviolet&style=flat&label=Visitors:)](https://www.github.com/guinetik/)
 
 ![languages](https://img.shields.io/static/v1?label=&message=languages:&color=111&style=flat-square)
 ![java](https://img.shields.io/static/v1?logo=java&label=&message=java&color=36465D&logoColor=AAA&style=flat-square)
