@@ -49,15 +49,16 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 ![oracle](https://img.shields.io/static/v1?logo=oracle&label=&message=oracle&color=36465D&logoColor=AAA&style=flat-square&link=)
 ![wildfly](https://img.shields.io/static/v1?logo=redhat&label=&message=wildfly&color=36465D&logoColor=AAA&style=flat-square)
 
-<div align="center">
+<div align="center" width="100%">
   <a href="https://github.com/anuraghazra/github-readme-stats">
     <img align="center" 
-         height="150"
+         width="80%"
          src="https://github-readme-stats.vercel.app/api?username=guinetik&show_icons=true&theme=nightowl&count_private=true&hide=issues,contribs" />
   </a>
+  <p></p>
   <a href="https://github.com/guinetik">
     <img align="center"
-         height="150"
+         width="80%"
          src="https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=10&theme=nightowl&layout=compact&count_private=true&card_width=300&cache_seconds=1800" />
   </a>
   <p></p>
