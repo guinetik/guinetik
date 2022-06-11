@@ -58,7 +58,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
   <a href="https://github.com/guinetik">
     <img align="center"
          height="150"
-         src="https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=6&theme=nightowl&layout=compact&count_private=true&card_width=300" />
+         src="https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=6&theme=nightowl&layout=compact&count_private=true&card_width=300&cache_seconds=1800" />
   </a>
   <p></p>
   <a href="https://github.com/guinetik">
