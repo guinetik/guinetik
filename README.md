@@ -51,20 +51,23 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="center" height="150" src="https://github-readme-stats.vercel.app/api?username=guinetik&show_icons=true&theme=nightowl&count_private=true&hide=issues,contribs" />
+    <img align="center" 
+         height="150"
+         src="https://github-readme-stats.vercel.app/api?username=guinetik&show_icons=true&theme=nightowl&count_private=true&hide=issues,contribs" />
   </a>
-  <a href="https://github.com/anuraghazra/convoychat">
+  <a href="https://github.com/guinetik">
     <img align="center"
          height="150"
          src="https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=6&theme=nightowl&layout=compact&count_private=true&card_width=300" />
   </a>
-  <a href="https://github.com/anuraghazra/convoychat">
+  <p></p>
+  <a href="https://github.com/guinetik">
     <img align="center"
-         height="150"
-         src="https://github-readme-stats.vercel.app/api/wakatime?username=guinetik&langs_count=6&theme=nightowl&layout=compact&count_private=true&card_width=300" />
+         width="81%"
+         src="https://github-readme-stats.vercel.app/api/wakatime?username=guinetik&theme=nightowl&count_private=true&cache_seconds=1800&layout=compact" />
   </a>
   <p></p>
-  <img width="83%" src="https://github-readme-streak-stats.herokuapp.com/?user=guinetik&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=20232a" alt="teudm" />
+  <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=guinetik&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=20232a" alt="teudm" />
   
   <img alt="Gráfico de atividades" 
        src="https://activity-graph.herokuapp.com/graph?username=guinetik&bg_color=0D1117&color=8266f2&line=8266f2&point=ba66f2&hide_border=true" />
