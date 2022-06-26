@@ -103,7 +103,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
     <td width="33%">
       <a href="https://www.brasilsemcorona.com.br/">
         <p align="center">
-          <img height="200" src="https://i.postimg.cc/T3NVy62Q/image.png">
+          <img height="200" src="https://media-exp2.licdn.com/dms/image/C4E22AQGjsdfBFcSgeg/feedshare-shrink_800/0/1585084274350?e=1658966400&v=beta&t=SjNfKDQHj90zGw2NM_D70Pci6iWoDJQcI9r8YvIg5Eg">
           <small>Brasil Sem Corona</small></p>
       </a>
     </td>
