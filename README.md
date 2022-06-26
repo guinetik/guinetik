@@ -1,4 +1,7 @@
+<img src="./header.svg" width="100%" height="300">
+
 # Hello, friend 👋
+
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guinetik/)](https://www.linkedin.com/in/guinetik/)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guinetik@gmail.com)](mailto:guinetik@gmail.com)
 [![Youtube Badge](https://img.shields.io/youtube/channel/views/UCj8l9a39AcNVj_pdtjTmpfw)](https://www.youtube.com/channel/UCj8l9a39AcNVj_pdtjTmpfw)
@@ -51,16 +54,19 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
   ![wildfly](https://img.shields.io/static/v1?logo=redhat&label=&message=wildfly&color=36465D&logoColor=AAA&style=flat-square)
 
 ## Github Pages _demos_
+
 - [Wikipedia Search with Svelte](https://guinetik.github.io/vanguard-js/svelte-wikipedia-app/demo/)
 - [Kepler Exoplanet Review with Reactjs + Gun.js](https://guinetik.github.io/kepler-exoplanets-review/demo/)
 - [PyScript L.A.B](https://guinetik.github.io/python-ds/)
 
 ## Talks and Older stuff
+
 - [Echo Chambers](https://pitch.com/embed/4034086b-a88d-4fe7-9d21-4d42383dcb42)
 - [Testes de Carga com Postman](https://docs.google.com/presentation/d/1dHSKsH5S1SKCSgJNQPHf2LN-korjOJBp/edit?usp=sharing&ouid=109727319701909715868&rtpof=true&sd=true)
 - [Cargo Collective](https://cargocollective.com/guinetik/)
 
 ## Me & code
+
 <div
   class="parent"
   style="
@@ -110,6 +116,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 <br/>
 
 ## Repos you may like to _snoop_ around
+
 <div
   width="100%"
   style="
@@ -173,468 +180,103 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 </div>
 <br/>
 <br/>
+
 ## Projects
-<div width="100%" class="container-all" style="width: 100%; margin: 20px auto; ">
-  <div class="container" style="
-      width: calc(33% - 6px);
-      overflow: hidden;
-      height: fit-content;
-      margin: 3px;
-      padding: 0;
-      display: block;
-      position: relative;
-      float: left;
-    ">
-    <img src="https://i.postimg.cc/sxbZspYr/image.png" alt="" style="
-        width: 100%;
-        height: 300px;
-        transition-duration: 0.3s;
-        max-width: 100%;
-        display: block;
-        cursor: pointer;
-        object-fit: cover;
-      " />
-    <span style="
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        top: 35%;
-        left: 50%;
-        color:white;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 1.6em;
-        text-shadow: 1px 5px 10px black;
-        transition-duration: 0.3s;
-      " class="title">Mãos Conecta App</span>
-    <span class="text" style="
-        position: absolute;
-        top: 70%;
-        cursor: pointer;
-        max-width: 80%;
-        text-align: center;
-        left: 50%;
-        text-shadow: 1px 5px 10px black;
-        font-size: 1em;
-        color: #ccc;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transition-duration: 0.3s;
-        transform: translate(-50%, -50%);
-      ">Morbi diam viverra mattis sociis magna, habitasse penatibus non
-      lectus</span>
-  </div>
-  <div class="container" style="
-      width: calc(33% - 6px);
-      overflow: hidden;
-      height: fit-content;
-      margin: 3px;
-      padding: 0;
-      display: block;
-      position: relative;
-      float: left;
-    ">
-    <img src="https://i.postimg.cc/sxbZspYr/image.png" alt="" style="
-        width: 100%;
-        height: 300px;
-        transition-duration: 0.3s;
-        max-width: 100%;
-        display: block;
-        cursor: pointer;
-        object-fit: cover;
-      " />
-    <span style="
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        top: 35%;
-        left: 50%;
-        color:white;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 1.6em;
-        text-shadow: 1px 5px 10px black;
-        transition-duration: 0.3s;
-      " class="title">Mãos Conecta App</span>
-    <span class="text" style="
-        position: absolute;
-        top: 70%;
-        cursor: pointer;
-        max-width: 80%;
-        text-align: center;
-        left: 50%;
-        text-shadow: 1px 5px 10px black;
-        font-size: 1em;
-        color: #ccc;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transition-duration: 0.3s;
-        transform: translate(-50%, -50%);
-      ">Morbi diam viverra mattis sociis magna, habitasse penatibus non
-      lectus</span>
-  </div>
-  <div class="container" style="
-      width: calc(33% - 6px);
-      overflow: hidden;
-      height: fit-content;
-      margin: 3px;
-      padding: 0;
-      display: block;
-      position: relative;
-      float: left;
-    ">
-    <img src="https://i.postimg.cc/sxbZspYr/image.png" alt="" style="
-        width: 100%;
-        height: 300px;
-        transition-duration: 0.3s;
-        max-width: 100%;
-        display: block;
-        cursor: pointer;
-        object-fit: cover;
-      " />
-    <span style="
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        top: 35%;
-        left: 50%;
-        color:white;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 1.6em;
-        text-shadow: 1px 5px 10px black;
-        transition-duration: 0.3s;
-      " class="title">Mãos Conecta App</span>
-    <span class="text" style="
-        position: absolute;
-        top: 70%;
-        cursor: pointer;
-        max-width: 80%;
-        text-align: center;
-        left: 50%;
-        text-shadow: 1px 5px 10px black;
-        font-size: 1em;
-        color: #ccc;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transition-duration: 0.3s;
-        transform: translate(-50%, -50%);
-      ">Morbi diam viverra mattis sociis magna, habitasse penatibus non
-      lectus</span>
-  </div>
-  <!--                  row                       -->
-  <div class="container" style="
-      width: calc(33% - 6px);
-      overflow: hidden;
-      height: fit-content;
-      margin: 3px;
-      padding: 0;
-      display: block;
-      position: relative;
-      float: left;
-    ">
-    <img src="https://i.postimg.cc/sxbZspYr/image.png" alt="" style="
-        width: 100%;
-        height: 300px;
-        transition-duration: 0.3s;
-        max-width: 100%;
-        display: block;
-        cursor: pointer;
-        object-fit: cover;
-      " />
-    <span style="
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        top: 35%;
-        left: 50%;
-        color:white;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 1.6em;
-        text-shadow: 1px 5px 10px black;
-        transition-duration: 0.3s;
-      " class="title">Mãos Conecta App</span>
-    <span class="text" style="
-        position: absolute;
-        top: 70%;
-        cursor: pointer;
-        max-width: 80%;
-        text-align: center;
-        left: 50%;
-        text-shadow: 1px 5px 10px black;
-        font-size: 1em;
-        color: #ccc;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transition-duration: 0.3s;
-        transform: translate(-50%, -50%);
-      ">Morbi diam viverra mattis sociis magna, habitasse penatibus non
-      lectus</span>
-  </div>
-  <div class="container" style="
-      width: calc(33% - 6px);
-      overflow: hidden;
-      height: fit-content;
-      margin: 3px;
-      padding: 0;
-      display: block;
-      position: relative;
-      float: left;
-    ">
-    <img src="https://i.postimg.cc/sxbZspYr/image.png" alt="" style="
-        width: 100%;
-        height: 300px;
-        transition-duration: 0.3s;
-        max-width: 100%;
-        display: block;
-        cursor: pointer;
-        object-fit: cover;
-      " />
-    <span style="
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        top: 35%;
-        left: 50%;
-        color:white;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 1.6em;
-        text-shadow: 1px 5px 10px black;
-        transition-duration: 0.3s;
-      " class="title">Mãos Conecta App</span>
-    <span class="text" style="
-        position: absolute;
-        top: 70%;
-        cursor: pointer;
-        max-width: 80%;
-        text-align: center;
-        left: 50%;
-        text-shadow: 1px 5px 10px black;
-        font-size: 1em;
-        color: #ccc;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transition-duration: 0.3s;
-        transform: translate(-50%, -50%);
-      ">Morbi diam viverra mattis sociis magna, habitasse penatibus non
-      lectus</span>
-  </div>
-  <div class="container" style="
-      width: calc(33% - 6px);
-      overflow: hidden;
-      height: fit-content;
-      margin: 3px;
-      padding: 0;
-      display: block;
-      position: relative;
-      float: left;
-    ">
-    <img src="https://i.postimg.cc/sxbZspYr/image.png" alt="" style="
-        width: 100%;
-        height: 300px;
-        transition-duration: 0.3s;
-        max-width: 100%;
-        display: block;
-        cursor: pointer;
-        object-fit: cover;
-      " />
-    <span style="
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        top: 35%;
-        left: 50%;
-        color:white;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 1.6em;
-        text-shadow: 1px 5px 10px black;
-        transition-duration: 0.3s;
-      " class="title">Mãos Conecta App</span>
-    <span class="text" style="
-        position: absolute;
-        top: 70%;
-        cursor: pointer;
-        max-width: 80%;
-        text-align: center;
-        left: 50%;
-        text-shadow: 1px 5px 10px black;
-        font-size: 1em;
-        color: #ccc;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transition-duration: 0.3s;
-        transform: translate(-50%, -50%);
-      ">Morbi diam viverra mattis sociis magna, habitasse penatibus non
-      lectus</span>
-  </div>
-  <!--                  row                       -->
-  <div class="container" style="
-      width: calc(33% - 6px);
-      overflow: hidden;
-      height: fit-content;
-      margin: 3px;
-      padding: 0;
-      display: block;
-      position: relative;
-      float: left;
-    ">
-    <img src="https://i.postimg.cc/sxbZspYr/image.png" alt="" style="
-        width: 100%;
-        height: 300px;
-        transition-duration: 0.3s;
-        max-width: 100%;
-        display: block;
-        cursor: pointer;
-        object-fit: cover;
-      " />
-    <span style="
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        top: 35%;
-        left: 50%;
-        color:white;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 1.6em;
-        text-shadow: 1px 5px 10px black;
-        transition-duration: 0.3s;
-      " class="title">Mãos Conecta App</span>
-    <span class="text" style="
-        position: absolute;
-        top: 70%;
-        cursor: pointer;
-        max-width: 80%;
-        text-align: center;
-        left: 50%;
-        text-shadow: 1px 5px 10px black;
-        font-size: 1em;
-        color: #ccc;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transition-duration: 0.3s;
-        transform: translate(-50%, -50%);
-      ">Morbi diam viverra mattis sociis magna, habitasse penatibus non
-      lectus</span>
-  </div>
-  <div class="container" style="
-      width: calc(33% - 6px);
-      overflow: hidden;
-      height: fit-content;
-      margin: 3px;
-      padding: 0;
-      display: block;
-      position: relative;
-      float: left;
-    ">
-    <img src="https://i.postimg.cc/sxbZspYr/image.png" alt="" style="
-        width: 100%;
-        height: 300px;
-        transition-duration: 0.3s;
-        max-width: 100%;
-        display: block;
-        cursor: pointer;
-        object-fit: cover;
-      " />
-    <span style="
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        top: 35%;
-        left: 50%;
-        color:white;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 1.6em;
-        text-shadow: 1px 5px 10px black;
-        transition-duration: 0.3s;
-      " class="title">Mãos Conecta App</span>
-    <span class="text" style="
-        position: absolute;
-        top: 70%;
-        cursor: pointer;
-        max-width: 80%;
-        text-align: center;
-        left: 50%;
-        text-shadow: 1px 5px 10px black;
-        font-size: 1em;
-        color: #ccc;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transition-duration: 0.3s;
-        transform: translate(-50%, -50%);
-      ">Morbi diam viverra mattis sociis magna, habitasse penatibus non
-      lectus</span>
-  </div>
-  <div class="container" style="
-      width: calc(33% - 6px);
-      overflow: hidden;
-      height: fit-content;
-      margin: 3px;
-      padding: 0;
-      display: block;
-      position: relative;
-      float: left;
-    ">
-    <img src="https://i.postimg.cc/sxbZspYr/image.png" alt="" style="
-        width: 100%;
-        height: 300px;
-        transition-duration: 0.3s;
-        max-width: 100%;
-        display: block;
-        cursor: pointer;
-        object-fit: cover;
-      " />
-    <span style="
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        top: 35%;
-        left: 50%;
-        color:white;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 1.6em;
-        text-shadow: 1px 5px 10px black;
-        transition-duration: 0.3s;
-      " class="title">Mãos Conecta App</span>
-    <span class="text" style="
-        position: absolute;
-        top: 70%;
-        cursor: pointer;
-        max-width: 80%;
-        text-align: center;
-        left: 50%;
-        text-shadow: 1px 5px 10px black;
-        font-size: 1em;
-        color: #ccc;
-        background: rgba(0, 0, 0, 0.5);
-        margin-right: -50%;
-        transition-duration: 0.3s;
-        transform: translate(-50%, -50%);
-      ">Morbi diam viverra mattis sociis magna, habitasse penatibus non
-      lectus</span>
-  </div>
-  
-</div>
+
+<table>
+  <tr>
+    <td>Artesan App</td>
+    <td>Brasil Sem Corona</td>
+    <td>Staffeto ADP</td>
+  </tr>
+  <tr>
+    <td width="33%" style="object-fit: cover;" class="picture">
+      <img 
+      class="picture"
+      height="100%"
+      alt="Artesan App"
+      style="object-fit: cover;"
+      src="https://i.postimg.cc/sxbZspYr/image.png" width="100%" />
+    </td>
+    <td width="33%">
+      <img
+      class="picture"
+      height="100%"
+      style="object-fit: cover;"
+      alt="Brasil Sem Corona"
+        src="https://media-exp2.licdn.com/dms/image/C4E22AQGjsdfBFcSgeg/feedshare-shrink_800/0/1585084274350?e=1658966400&v=beta&t=SjNfKDQHj90zGw2NM_D70Pci6iWoDJQcI9r8YvIg5Eg"
+        width="100%"
+      />
+    </td>
+    <td width="33%">
+      <img
+      height="100%"
+      style="object-fit: cover;"
+      alt="Staffeto ADP"
+        src="https://d3bql97l1ytoxn.cloudfront.net/app_resources/252496/overview/image5694088891600417366.png"
+        width="100%"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Epihack Rio</td>
+    <td>Coca Cola: Hapiness Refill</td>
+    <td>Coca Cola: Hapiness Refill</td>
+  </tr>
+  <tr>
+    <td width="33%">
+      <img 
+      height="100%"
+      alt="Epihack Rio"
+      src="https://i.postimg.cc/sxbZspYr/image.png" width="100%" />
+    </td>
+    <td width="33%">
+      <img
+      height="100%"
+      alt="Coca Cola: Hapiness Refill"
+      style="object-fit: cover;"
+        src="https://media-exp2.licdn.com/dms/image/C4E22AQGjsdfBFcSgeg/feedshare-shrink_800/0/1585084274350?e=1658966400&v=beta&t=SjNfKDQHj90zGw2NM_D70Pci6iWoDJQcI9r8YvIg5Eg"
+        width="100%"
+      />
+    </td>
+    <td width="33%">
+      <img
+      height="100%"
+      alt="Coca Cola: Hapiness Refill"
+      style="object-fit: cover;"
+        src="https://d3bql97l1ytoxn.cloudfront.net/app_resources/252496/overview/image5694088891600417366.png"
+        width="100%"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Billboard: Fan Check Machine</td>
+    <td>Billboard: NFC Player</td>
+    <td>Huggies: Tweet Pee</td>
+  </tr>
+  <tr>
+    <td width="33%">
+      <img 
+      alt="Coca Cola: Hapiness Refill"
+      style="object-fit: cover;"
+      src="https://i.postimg.cc/sxbZspYr/image.png" width="100%" />
+    </td>
+    <td width="33%">
+      <img
+      alt="Coca Cola: Hapiness Refill"
+      style="object-fit: cover;"
+        src="https://media-exp2.licdn.com/dms/image/C4E22AQGjsdfBFcSgeg/feedshare-shrink_800/0/1585084274350?e=1658966400&v=beta&t=SjNfKDQHj90zGw2NM_D70Pci6iWoDJQcI9r8YvIg5Eg"
+        width="100%"
+      />
+    </td>
+    <td width="33%">
+      <img
+      alt="Coca Cola: Hapiness Refill"
+      style="object-fit: cover;"
+        src="https://d3bql97l1ytoxn.cloudfront.net/app_resources/252496/overview/image5694088891600417366.png"
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
+
