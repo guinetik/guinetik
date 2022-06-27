@@ -24,7 +24,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 - 🎓 Taking a masters degree in Software Engineering at [Cesar School](https://www.cesar.school/)
 - 🌱 Learning **Data Science** and _Rust_
 - 💬 I'm into `java`, `nodejs`, `frontend`, `data science` & `devops`
-- 📫 Hit me up at: [mailto:guinetik@gmail.com](guinetik@gmail.com)
+- 📫 Hit me up at: [guinetik@gmail.com](mailto:guinetik@gmail.com)
 - 🕹️ I'm into tech, games, infotainment and geek culture
 
 - ![languages](https://img.shields.io/static/v1?label=&message=languages:&color=blueviolet&style=flat-square)
