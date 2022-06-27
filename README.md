@@ -1,4 +1,4 @@
-<img src="./header.svg" width="100%" height="300">
+<img src="./header.svg" width="100%" height="240">
 
 # Hello, friend 👋
 
@@ -15,7 +15,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 
 ## I'm guintetik
 
-- :neckbeard: I'm an eclectic coder with an agnostic view in software engineering.
+- 🤓 I'm an eclectic coder with an agnostic view in software engineering.
 - 🌎 I live in Recife/Pernambuco - Brazil
 - 👨‍💼 I have over 10 years of experience coding for advertising, banking, public health and HR spaces.
 - 🏬 I've worked at [Cappen](https://cappen.com), [Ogilvy](https://ogilvy.com.br), [Accenture](https://accenture.com), [VanHack](https://vanhack.com), [Crossover](https://crossover.com) and [Epitrack](https://epitrack.com.br).
@@ -24,7 +24,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 - 🎓 Taking a masters degree in Software Engineering at [Cesar School](https://www.cesar.school/)
 - 🌱 Learning **Data Science** and _Rust_
 - 💬 I'm into `java`, `nodejs`, `frontend`, `data science` & `devops`
-- 📫 Hit me up at: [twitter.com/guinetik](https://twitter.com/guinetik)
+- 📫 Hit me up at: [mailto:guinetik@gmail.com](guinetik@gmail.com)
 - 🕹️ I'm into tech, games, infotainment and geek culture
 
 - ![languages](https://img.shields.io/static/v1?label=&message=languages:&color=blueviolet&style=flat-square)
