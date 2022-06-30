@@ -1,0 +1,21 @@
+{
+  "name": "solid-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "daisyui": "^2.17.0",
+    "postcss": "^8.4.7",
+    "tailwindcss": "^3.1.14",
+    "vite": "^2.8.6",
+    "vite-plugin-solid": "^2.2.5"
+  },
+  "dependencies": {
+    "solid-js": "^1.4.5"
+  }
+}
