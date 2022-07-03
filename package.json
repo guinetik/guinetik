@@ -1,12 +1,12 @@
 {
   "name": "guinetik-ghpages",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
-    "deploy": "gh-pages --dist 'dist' --branch 'gh-pages'"
+    "build": "vite build --base=/guinetik/",
+    "deploy": "gh-pages --dist dist --branch 'gh-pages'"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",

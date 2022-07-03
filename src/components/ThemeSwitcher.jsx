@@ -1,7 +1,17 @@
 import { useSite } from "../SiteStore";
+import { onMount } from "solid-js";
 const ThemeSwitcher = () => {
   const Site = useSite();
-  Site.helloWorldFromContext();
+  let theme = "guinetik";
+  onMount(async () => {
+    const obs = new MutationObserver(() => {
+      console.log(
+        `data-theme is "${document.documentElement.dataset.theme}" now`
+      );
+      let theme = document.documentElement.dataset.theme;
+      Site.setTheme(theme);
+    }).observe(document.documentElement, { attributes: true });
+  });
   return (
     <button class="dropdown inline">
       <div tabindex="2" class="m-1 btn btn-sm">

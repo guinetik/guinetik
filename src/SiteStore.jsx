@@ -9,6 +9,7 @@ const SiteContext = createContext();
 const SiteProvider = (props) => {
   //
   const [getTheme, setTheme] = createSignal(Site.theme);
+  document.documentElement.dataset.theme = Site.theme;
   //
   const [getActive, setActive] = createSignal("home");
   // create a solid-js signal to store our site
