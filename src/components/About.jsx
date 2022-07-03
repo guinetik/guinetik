@@ -1,4 +1,6 @@
 import { useSite } from "../SiteStore";
+import { FiMail, FiLinkedin } from 'solid-icons/fi'
+//
 const AboutPage = () => {
   const Site = useSite();
   return (
@@ -10,65 +12,71 @@ const AboutPage = () => {
               <div class="relative">
                 <img
                   alt="Hey!"
-                  src="https://lh3.googleusercontent.com/a-/AOh14GjB8VonydeH0WKcPAW3muNC3ICmBnZjYbWQk5wU=s360-p-rw-no"
-                  class="shadow-xl rounded-full h-auto align-middle border-1 absolute -m-20 -ml-20 lg:-ml-16"
+                  src="https://media-exp2.licdn.com/dms/image/C4E03AQEPnWbnDhDD-A/profile-displayphoto-shrink_400_400/0/1516861103836?e=1662595200&v=beta&t=4GgaRUBxjQnILnub9ADnshzraq59w2PWhDEmCH6wfJA"
+                  class="shadow-xl rounded-full h-auto align-middle border-2 absolute -m-20 -ml-20 lg:-ml-16 border-neutral-content"
                   style="max-width: 150px;"
                 />
               </div>
             </div>
             <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
               <div class="py-6 px-3  sm:mt-0">
-                <button
-                  class="invisible bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
-                  type="button"
+                <a
+                  class="btn btn-outline btn-error font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                  href="mailto:guinetik@gmail.com"
                 >
+                  <FiMail size={16} class="mr-1"/>
                   EMAIL ME
-                </button>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/guinetik/"
+                  target="_blank"
+                  class="float-right btn btn-outline btn-info font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                >
+                  <FiLinkedin size={16} class="mr-1"/> LINKED-IN
+                </a>
               </div>
             </div>
             <div class="w-full lg:w-4/12 px-4 lg:order-1">
               <div class="flex justify-center py-4 lg:pt-4 pt-8">
                 <div class="mr-4 p-3 text-center">
                   <span class="text-xl font-bold block uppercase tracking-wide text-slate-600">
-                    22
+                  {Site.data().sections.demos.cards.length}
                   </span>
-                  <span class="text-sm text-slate-400">Friends</span>
+                  <span class="text-sm text-slate-400">Demos</span>
                 </div>
                 <div class="mr-4 p-3 text-center">
                   <span class="text-xl font-bold block uppercase tracking-wide text-slate-600">
-                    10
+                    {Site.data().sections.repos.cards.length}
                   </span>
-                  <span class="text-sm text-slate-400">Photos</span>
+                  <span class="text-sm text-slate-400">Repositories</span>
                 </div>
                 <div class="lg:mr-4 p-3 text-center">
                   <span class="text-xl font-bold block uppercase tracking-wide text-slate-600">
-                    89
+                    {Site.data().sections.projects.cards.length}
                   </span>
-                  <span class="text-sm text-slate-400">Comments</span>
+                  <span class="text-sm text-slate-400">Projects</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="text-center">
-            <a id="about" href="#" class="disabled">
-              <h3 class="text-primary-focus font-title p-2 pb-1 text-xl font-extrabold sm:text-5xl lg:text-7xl text-center drop-shadow-md">
+            <a id="about" href="#" class="py-1">
+              <h3 class="text-primary text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-10xl font-extrabold text-center drop-shadow-md">
                 {Site.data().sections.about.header}
               </h3>
             </a>
-            <div class="text-secondary-focus">
+            <div class="text-secondary font-bold text-xl md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
               {Site.data().sections.about.subheader}
             </div>
-            <div class="text-accent-focus text-sm leading-normal mt-0 font-bold uppercase">
+            <div class="text-accent font-bold uppercase text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
               {Site.data().sections.about.aside}
             </div>
-            <div class="mt-4">{Site.data().sections.about.content}</div>
-          </div>
-          <div class="mt-10 py-10 border-t border-neutral">
-            <div class="flex flex-wrap justify-center">
-              <div class="w-full lg:w-9/12 px-4">
-                {Site.data().sections.about.text}
-              </div>
+            <div class="py-4 flex justify-center">
+              {Site.data().sections.about.content}
             </div>
+          </div>
+          <div class="flex flex-wrap justify-center my-10">
+              {Site.data().sections.about.text}
           </div>
         </div>
       </div>

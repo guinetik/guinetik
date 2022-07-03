@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.prose a {
+    @apply text-primary
+}
+
+.prose strong {
+    @apply text-primary
+}
+
+.prose code {
+    @apply text-primary
+}

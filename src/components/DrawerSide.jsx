@@ -1,24 +1,28 @@
 // create JSX component for DrawerSide
+import { useSite } from "../SiteStore";
 const DrawerSide = () => {
+  const Site = useSite();
+  // obtain signal to read the current's active link
+  let activeLink = Site.getActiveLink();
   return (
     <div class="drawer-side">
       <label for="main-drawer" class="drawer-overlay"></label>
       <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
-        <li>
-          <a href="#about">🙋‍♂️ About me</a>
-        </li>
-        <li>
-          <a href="#code">📈 Code & Me</a>
-        </li>
-        <li>
-          <a href="#demos">🔭 Github Demos</a>
-        </li>
-        <li>
-          <a href="#repos">🗃️ Github Repos</a>
-        </li>
-        <li>
-          <a href="#projects">🛠️ Featured Projects</a>
-        </li>
+        <For each={Site.data().menu.mobile}>
+          {(menu, i) => (
+            <li>
+              <a
+                onClick={() => {
+                  Site.setActiveLink(menu.id);
+                }}
+                class={`${activeLink() === menu.id ? "active" : "notactive"}`}
+                href={menu.link}
+              >
+                {menu.title}
+              </a>
+            </li>
+          )}
+        </For>
       </ul>
     </div>
   );

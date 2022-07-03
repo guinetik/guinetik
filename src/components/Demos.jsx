@@ -3,10 +3,10 @@ import ContentCard from "./ContentCard";
 const DemosPage = () => {
   const Site = useSite();
   return (
-    <section id="section_demos" class="bg-neutral-content pt-2 pb-16">
+    <section id="section_demos" class="bg-neutral-content pb-16 pt-8">
       <div class="container mx-auto mt-2">
         <a id="demos" href="#" class="disabled">
-          <h1 class="text-primary-focus font-title p-8 text-4xl font-extrabold sm:text-5xl lg:text-7xl text-center drop-shadow-lg">
+          <h1 class="text-primary-focus py-8 sm:py-8 md:py-8 lg:py-8 xl:py-12 2xl:py-16 text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-10xl font-extrabold text-center drop-shadow-md">
             Github Demos
           </h1>
         </a>
