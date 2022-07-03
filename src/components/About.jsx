@@ -1,5 +1,6 @@
 import { useSite } from "../SiteStore";
-import { FiMail, FiLinkedin } from 'solid-icons/fi'
+import { FiMail } from 'solid-icons/fi'
+import { FaBrandsLinkedin } from "solid-icons/fa";
 //
 const AboutPage = () => {
   const Site = useSite();
@@ -32,7 +33,7 @@ const AboutPage = () => {
                   target="_blank"
                   class="float-right btn btn-outline btn-info font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                 >
-                  <FiLinkedin size={16} class="mr-1"/> LINKED-IN
+                  <FaBrandsLinkedin size={16} class="mr-1"/> LINKED-IN
                 </a>
               </div>
             </div>
