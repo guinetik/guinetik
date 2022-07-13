@@ -359,11 +359,11 @@ let Site = {
           ],
         },
         {
-          title: "Kepler Exoplanets",
+          title: "Exoplanets Review",
           description:
-            "Aid for a search for a habitable planet. Discover and review Kepler's exoplanets. Post your comments about the planet on a descentralized DB using gun.js.",
+            "Aid for a search for a habitable planet. Discover and review exoplanets confirmed by the TESS probe. Post your comments and reviews about the planet.",
           image: "https://i.ibb.co/S7MfGhX/exoplanets.png",
-          link: "https://guinetik.github.io/kepler-exoplanets-review/demo/",
+          link: "https://guinetik.github.io/exoplanets-review",
           tags: [
             {
               name: "ReactJs",
@@ -374,8 +374,8 @@ let Site = {
               link: "https://tailwindcss.com/",
             },
             {
-              name: "Gun.js",
-              link: "https://gun.js.org/",
+              name: "firebase",
+              link: "https://firebase.google.com/",
             },
           ],
         },
