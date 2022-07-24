@@ -1,5 +1,5 @@
 import { useSite } from "../SiteStore";
-import { createEffect, createSignal } from "solid-js";
+import { createEffect, createSignal, onMount } from "solid-js";
 //
 const ReposPage = () => {
   let statsBgs;
@@ -20,6 +20,10 @@ const ReposPage = () => {
   // create an effect subscribing to the site theme signal
   createEffect(() => changePageTheme(siteTheme()));
   //
+  onMount(async () => {
+    await Site.getRepos();
+  });
+  //
   return (
     <section id="section_repos" class="bg-base-300 pt-2 pb-16">
       <div class="container mx-auto mt-2">
@@ -33,8 +37,10 @@ const ReposPage = () => {
             {(repo, i) => (
               <div class="card w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 pl-2 pr-2 py-2">
                 <div class="card bg-neutral glass w-full h-full p-1 shadow-lg">
-                  <div class="card shadow-lg w-full h-full"
-                  style={`background:#${statsBg()}`}>
+                  <div
+                    class="card shadow-lg w-full h-full"
+                    style={`background:#${statsBg()}`}
+                  >
                     <a href={`https://github.com/guinetik/${repo}`}>
                       <img
                         class="w-full h-full"
