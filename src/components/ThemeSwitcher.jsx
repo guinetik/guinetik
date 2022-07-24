@@ -5,9 +5,6 @@ const ThemeSwitcher = () => {
   let theme = "guinetik";
   onMount(async () => {
     const obs = new MutationObserver(() => {
-      console.log(
-        `data-theme is "${document.documentElement.dataset.theme}" now`
-      );
       let theme = document.documentElement.dataset.theme;
       Site.setTheme(theme);
     }).observe(document.documentElement, { attributes: true });

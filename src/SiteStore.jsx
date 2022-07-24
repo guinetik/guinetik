@@ -1,5 +1,6 @@
 import { createSignal, createContext, useContext } from "solid-js";
 import Site from "./Site";
+import { graphql } from "https://cdn.skypack.dev/@octokit/graphql";
 /**
  * Implementing a site-wide context in solid-js
  */
@@ -7,6 +8,7 @@ import Site from "./Site";
 const SiteContext = createContext();
 // create provider for context
 const SiteProvider = (props) => {
+  const token = decodeURIComponent(escape(window.atob( "Z2hwX080ejNnbW9Oak1heVJSMEoyOXNya1ZkcFF4bmV3RDM0Y01JQw==" )));
   //
   const [getTheme, setTheme] = createSignal(Site.theme);
   document.documentElement.dataset.theme = Site.theme;
@@ -21,6 +23,28 @@ const SiteProvider = (props) => {
       // testing if the context work
       helloWorldFromContext: () => {
         console.log("Hello world from context");
+      },
+      getRepos: async () => {
+        console.log("fetching repos");
+        const graphqlWithAuth = graphql.defaults({
+          headers: {
+            authorization: `token ${token}`,
+          },
+        });
+        const response  = await graphqlWithAuth(`
+          {
+            user(login: "guinetik") {
+              repositories(first: 50, isFork: false, orderBy:{field: CREATED_AT, direction: DESC}) {
+                nodes {
+                  name
+                }
+              }
+            }
+          }
+        `);
+        const repos = response.user.repositories.nodes.map((repo) => repo.name);
+        Site.sections.repos.cards = repos;
+        setSite(Site);
       },
       // updates the site's theme
       setTheme: (t) => {
@@ -53,11 +77,7 @@ const SiteProvider = (props) => {
             "#" + menuItem.id
           );
         } else {
-          history.pushState(
-            null,
-            "Guinetik",
-            "#"
-          );
+          history.pushState(null, "Guinetik", "#");
         }
       },
       getActiveLink: () => {
