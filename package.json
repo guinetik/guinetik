@@ -1,11 +1,11 @@
 {
   "name": "guinetik-ghpages",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/",
     "deploy": "gh-pages --dist dist --branch gh-pages"
   },
   "devDependencies": {
