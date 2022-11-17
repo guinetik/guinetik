@@ -8,7 +8,7 @@ import { graphql } from "https://cdn.skypack.dev/@octokit/graphql";
 const SiteContext = createContext();
 // create provider for context
 const SiteProvider = (props) => {
-  const token = decodeURIComponent(escape(window.atob( "Z2hwX080ejNnbW9Oak1heVJSMEoyOXNya1ZkcFF4bmV3RDM0Y01JQw==" )));
+  const token = decodeURIComponent(escape(window.atob( "Z2hwX3BOSVNVUmNUSFNnRXZnamJ3QXN3VURzQ1cyUFc0azRJNmZKYQ==" )));
   //
   const [getTheme, setTheme] = createSignal(Site.theme);
   document.documentElement.dataset.theme = Site.theme;
