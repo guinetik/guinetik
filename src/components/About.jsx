@@ -13,7 +13,7 @@ const AboutPage = () => {
               <div class="relative">
                 <img
                   alt="Hey!"
-                  src="https://media-exp2.licdn.com/dms/image/C4E03AQEPnWbnDhDD-A/profile-displayphoto-shrink_400_400/0/1516861103836?e=1662595200&v=beta&t=4GgaRUBxjQnILnub9ADnshzraq59w2PWhDEmCH6wfJA"
+                  src="https://i.imgur.com/IC4Fu0K.png"
                   class="shadow-xl rounded-full h-auto align-middle border-2 absolute -m-20 -ml-20 lg:-ml-16 border-neutral-content"
                   style="max-width: 150px;"
                 />

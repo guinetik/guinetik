@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return (
     <footer class="text-center text-white bg-base-300">
-      <div class="container pt-9">
+      <div class="pt-9 w-full">
         <div class="flex justify-center mb-9">
           <a href="https://github.com/guinetik" class="text-base-content mr-9">
             <FaBrandsGithub size={16} />
