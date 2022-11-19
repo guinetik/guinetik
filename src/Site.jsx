@@ -16,9 +16,9 @@ let Site = {
         link: "#about",
       },
       {
-        title: "Code & Me",
-        id: "code",
-        link: "#code",
+        title: "Featured Projects",
+        id: "projects",
+        link: "#projects",
       },
       {
         title: "Githhub Demos",
@@ -26,14 +26,14 @@ let Site = {
         link: "#demos",
       },
       {
+        title: "Code & Me",
+        id: "code",
+        link: "#code",
+      },
+      {
         title: "Githhub Repos",
         id: "repos",
         link: "#repos",
-      },
-      {
-        title: "Featured Projects",
-        id: "projects",
-        link: "#projects",
       },
     ],
     mobile: [
@@ -43,9 +43,9 @@ let Site = {
         link: "#about",
       },
       {
-        title: "📈 Code & Me",
-        id: "code",
-        link: "#code",
+        title: "🛠️ Featured Projects",
+        id: "projects",
+        link: "#projects",
       },
       {
         title: "🔭 Githhub Demos",
@@ -53,14 +53,14 @@ let Site = {
         link: "#demos",
       },
       {
+        title: "📈 Code & Me",
+        id: "code",
+        link: "#code",
+      },
+      {
         title: "🗃️ Githhub Repos",
         id: "repos",
         link: "#repos",
-      },
-      {
-        title: "🛠️ Featured Projects",
-        id: "projects",
-        link: "#projects",
       },
     ],
   },
@@ -124,8 +124,8 @@ let Site = {
   sections: {
     about: {
       title: "About me",
-      header: "João Guilherme",
-      subheader: "Software Architect - Creative Coder",
+      header: "Hello world! This is Guinetik",
+      subheader: "I am a Software Architect and Creative Coder",
       aside: "🌎 RECIFE, BRAZIL",
       content: (
         <div class="flex flex-wrap w-full lg:w-9/12 px-4 justify-center">
@@ -295,6 +295,7 @@ let Site = {
             loading="lazy"
             class="w-min"
             src="https://camo.githubusercontent.com/877ce7a5dfb91e267f1a9dbd9a8d4f4c542059f041b358765b13d1ec160b1dec/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6f676f3d676974266c6162656c3d266d6573736167653d67697426636f6c6f723d333634363544266c6f676f436f6c6f723d414141267374796c653d666c61742d737175617265"
+            alt="git"
           />
           <img
             width="47"
@@ -362,10 +363,10 @@ let Site = {
         </div>
       ),
       text: (
-        <article class="prose sm:prose-sm md:prose-md lg:prose-lg xl:prose-xl 2xl:prose-2xl max-w-none text-neutral">
+        <article class="prose prose-xl sm:prose-sm md:prose-md lg:prose-lg xl:prose-xl 2xl:prose-2xl max-w-none text-neutral font-medium">
           <p>
-            🤓 I'm an eclectic coder with an agnostic view in software
-            engineering.
+            🙋‍♂️ My name is João Guilherme Ribeiro. I'm an eclectic coder with an agnostic view in software
+            engineering. 🤓
           </p>
           <p>
             💼 I have over 10 years of experience coding for advertising,

@@ -10,7 +10,7 @@ const CodePage = () => {
           style={`background:#${statsBg()}`}
         >
           <img
-            width="320"
+            width="280"
             height="95"
             decoding="async"
             loading="lazy"

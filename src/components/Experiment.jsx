@@ -21,7 +21,6 @@ const ExperimentItem = (props) => {
             width="960"
             height="500"
             decoding="async"
-            loading="lazy"
             class="w-full h-full sm:h-[400px] md:h-[500px] lg:h-[580px] xl:h-[600px] 2xl:h-[680px]"
             src={props.exp.url}
           />
