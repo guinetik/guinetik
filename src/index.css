@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 .prose a {
-    @apply text-primary
+    @apply text-secondary;
+    @apply font-bold;
 }
 
 .prose strong {
-    @apply text-primary
+    @apply text-primary;
+    @apply font-bold;
 }
 
 .prose code {
-    @apply text-primary
+    @apply text-accent;
+    @apply font-bold;
 }

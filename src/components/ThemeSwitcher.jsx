@@ -11,7 +11,7 @@ const ThemeSwitcher = () => {
   });
   return (
     <button class="dropdown inline">
-      <div tabindex="2" class="m-1 btn btn-sm">
+      <div tabindex="0" class="m-1 btn btn-sm">
         🤔 Pick your Mood
       </div>
       <ul

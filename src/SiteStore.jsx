@@ -25,7 +25,7 @@ const SiteProvider = (props) => {
         console.log("Hello world from context");
       },
       getRepos: async () => {
-        console.log("fetching repos");
+        //console.log("fetching repos");
         const graphqlWithAuth = graphql.defaults({
           headers: {
             authorization: `token ${token}`,
