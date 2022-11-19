@@ -1,9 +1,13 @@
-import { FiExternalLink } from 'solid-icons/fi'
+import { FiExternalLink } from "solid-icons/fi";
 const ContentCard = (props) => {
   return (
     <div class="card shadow-xl glass">
       <figure class="rounded sm:h-96 md:h-60 lg:h-48 xl:h-72 2xl:h-96 w-full">
         <img
+          width="320"
+          height="192"
+          decoding="async"
+          loading="lazy"
           class="object-cover object-center h-full w-full"
           src={props.card.image}
           alt={props.card.title}
@@ -23,8 +27,8 @@ const ContentCard = (props) => {
           href={props.card.link}
           target="_blank"
         >
-          <FiExternalLink size={16}/>
-          Visit
+          <FiExternalLink size={16} />
+          LAUNCH
         </a>
         <div class="tech_stack flex flex-wrap self-center gap-1 float-right">
           <For each={props.card.tags}>

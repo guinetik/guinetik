@@ -9,7 +9,15 @@ const CodePage = () => {
           class="card shadow-lg w-full h-full"
           style={`background:#${statsBg()}`}
         >
-          <img class="card w-full" alt={props.title} src={props.src} />
+          <img
+            width="320"
+            height="95"
+            decoding="async"
+            loading="lazy"
+            class="card w-full"
+            alt={props.title}
+            src={props.src}
+          />
         </div>
       </div>
     );
@@ -46,7 +54,7 @@ const CodePage = () => {
   return (
     <section id="section_code" class="bg-base-300 pb-16 pt-8">
       <div class="container mx-auto">
-        <a id="code" href="#" class="disabled">
+        <a id="code" href="#" class="text-info">
           <h1 class="font-title py-8 sm:py-8 md:py-8 lg:py-8 xl:py-12 2xl:py-16 text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-10xl font-extrabold text-center drop-shadow-md">
             Code & Me
           </h1>
