@@ -7,7 +7,7 @@ const Nav = () => {
   const [menu, setMenu] = createSignal([]);
   const handleScroll = () => {
     //setScroll(document.getElementById("drawer-content").scrollTop);
-    if(isInViewport(document.getElementById("section_experiment"))) {
+    if (isInViewport(document.getElementById("section_experiment"))) {
       Site.setActiveLink("home");
     } else {
       menu().forEach((item) => {
@@ -78,7 +78,8 @@ const Nav = () => {
         <div class="flex-1">
           <a
             id="logo"
-            href="#"
+            href="/"
+            title="Go to Home"
             onClick={() => {
               Site.setActiveLink("home");
               document.getElementById("drawer-content").scrollTo(0, 0);
@@ -87,7 +88,7 @@ const Nav = () => {
             <svg
               style="filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));"
               xmlns="http://www.w3.org/2000/svg"
-              class="h-10 drop-shadow-xl -mt-2"
+              class="h-10 drop-shadow-xl -mt-2 text-white"
               fill="currentColor"
               viewBox="10.848 14.449 356.239 88.472"
             >

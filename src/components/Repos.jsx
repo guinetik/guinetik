@@ -27,7 +27,7 @@ const ReposPage = () => {
   return (
     <section id="section_repos" class="bg-base-300 pt-2 pb-16">
       <div class="container mx-auto mt-2">
-        <a id="repos" href="#" class="disabled">
+        <a id="repos" href="#" class="text-info">
           <h1 class="py-8 sm:py-8 md:py-8 lg:py-8 xl:py-12 2xl:py-16 text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-10xl font-extrabold text-center drop-shadow-md">
             Github Repos
           </h1>
@@ -43,6 +43,10 @@ const ReposPage = () => {
                   >
                     <a href={`https://github.com/guinetik/${repo}`}>
                       <img
+                        width="400"
+                        height="120"
+                        decoding="async"
+                        loading="lazy"
                         class="w-full h-full"
                         src={`https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=${repo}&theme=${pageTheme()}&show_owner=true&hide_border=true`}
                         alt={repo}
