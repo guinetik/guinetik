@@ -16,24 +16,24 @@ let Site = {
         link: "#about",
       },
       {
-        title: "Featured Projects",
-        id: "projects",
-        link: "#projects",
-      },
-      {
-        title: "Githhub Demos",
-        id: "demos",
-        link: "#demos",
-      },
-      {
         title: "Code & Me",
         id: "code",
         link: "#code",
       },
       {
+        title: "Featured Projects",
+        id: "projects",
+        link: "#projects",
+      },
+      {
         title: "Githhub Repos",
         id: "repos",
         link: "#repos",
+      },
+      {
+        title: "Githhub Demos",
+        id: "demos",
+        link: "#demos",
       },
     ],
     mobile: [
@@ -366,7 +366,7 @@ let Site = {
         <article class="prose prose-xl sm:prose-sm md:prose-md lg:prose-lg xl:prose-xl 2xl:prose-2xl max-w-none text-neutral font-medium">
           <p>
             🙋‍♂️ My name is João Guilherme Ribeiro. I'm an eclectic coder with an agnostic view in software
-            engineering. 🤓
+            engineering.🤓
           </p>
           <p>
             💼 I have over 10 years of experience coding for advertising,
@@ -431,11 +431,11 @@ let Site = {
     demos: {
       cards: [
         {
-          title: "Svelte Wiki Search",
+          title: "Svelte Wikipedia Search",
           description:
-            "Small wiki search app that uses the Wikimedia API to search articles. Features internationalization, dark mode and fetching the top posts of the day.",
+            "Small wikipedia search app that uses the Wikimedia API to search articles. Features internationalization, dark mode and fetching the top posts of the day.",
           image: "https://i.ibb.co/XDgYqQv/wiki-search.png",
-          link: "https://guinetik.github.io/vanguard-js/svelte-wikipedia-app/demo/",
+          link: "https://js.guinetik.com/svelte-wikipedia-app/wiki/",
           tags: [
             {
               name: "Svelte",
@@ -452,7 +452,7 @@ let Site = {
           description:
             "Aid for a search for a habitable planet. Discover and review exoplanets confirmed by the TESS probe. Post your comments and reviews about the planet.",
           image: "https://i.ibb.co/S7MfGhX/exoplanets.png",
-          link: "https://guinetik.github.io/exoplanets-review",
+          link: "https://exoplanets.guinetik.com/",
           tags: [
             {
               name: "ReactJs",

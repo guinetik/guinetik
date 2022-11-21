@@ -94,15 +94,16 @@ const App = () => {
         <main>
           <Experiment />
           <AboutPage />
-          <ProjectsPage />
-          <DemosPage />
           <CodePage />
+          <ProjectsPage />
           <ReposPage />
+          <DemosPage />
         </main>
         <Footer />
       </div>
       <div class="drawer-side">
-        <label for="main-drawer" class="drawer-overlay"></label>
+        <label for="main-drawer" class="drawer-overlay">
+        </label>
         <DrawerSide />
       </div>
     </div>
