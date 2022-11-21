@@ -16,14 +16,14 @@ const Footer = () => {
         <div class="flex justify-center mb-9 w-full">
           <a
             href="https://github.com/guinetik"
-            class="text-base-content mr-9"
+            class="text-base-content mr-4 sm:mr-9"
             title="Github"
           >
-            <FaBrandsGithub size={16} />
+            <FaBrandsGithub size={16}  />
           </a>
           <a
             href="https://codepen.io/guinetik"
-            class="text-base-content mr-9"
+            class="text-base-content mr-4 sm:mr-9"
             title="My Codepen"
           >
             <FiCodepen size={16} />
@@ -31,13 +31,13 @@ const Footer = () => {
           <a
             href="https://linkedin.com/guinetik"
             title="Linked In"
-            class="mr-9 text-base-content"
+            class="text-base-content mr-4 sm:mr-9"
           >
             <FaBrandsLinkedin size={16} />
           </a>
           <a
             href="https://twitter.com/guinetik"
-            class="mr-9 text-base-content"
+            class="text-base-content mr-4 sm:mr-9"
             title="Twitter"
           >
             <FaBrandsTwitter size={16} />
@@ -45,28 +45,28 @@ const Footer = () => {
           <a
             title="reddit"
             href="https://www.reddit.com/user/guinetikk"
-            class="mr-9 text-base-content"
+            class="text-base-content mr-4 sm:mr-9"
           >
             <FaBrandsReddit size={16} />
           </a>
           <a
             title="Spotify"
             href="https://open.spotify.com/user/guinetik"
-            class="text-base-content mr-9"
+            class="text-base-content mr-4 sm:mr-9"
           >
             <BsSpotify size={16} />
           </a>
           <a
             title="Instagram"
             href="https://instagram.com/guinetik"
-            class="mr-9 text-base-content"
+            class="text-base-content mr-4 sm:mr-9"
           >
             <FaBrandsInstagram size={16} />
           </a>
           <a
             title="Facebook"
             href="https://www.facebook.com/guinetik"
-            class="mr-9 text-base-content"
+            class="text-base-content mr-4 sm:mr-9"
           >
             <FaBrandsFacebookF size={16} />
           </a>
