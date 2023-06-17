@@ -2,6 +2,8 @@ import ThemeSwitcher from "./ThemeSwitcher";
 import { useSite } from "../SiteStore";
 import { onMount, onCleanup, createSignal } from "solid-js";
 const Nav = () => {
+  //
+  const Site = useSite();
   // creating a signal to save current scroll position
   //  const [getScroll, setScroll] = createSignal(0);
   const [menu, setMenu] = createSignal([]);
@@ -35,6 +37,7 @@ const Nav = () => {
       .removeEventListener("scroll", handleScroll);
   });
   onMount(() => {
+    activeLink = Site.getActiveLink();
     setMenu(Site.data().menu.main);
     document.getElementById("drawer-content").addEventListener(
       "scroll",
@@ -44,9 +47,7 @@ const Nav = () => {
       false
     );
   });
-  //
-  const Site = useSite();
-  let activeLink = Site.getActiveLink();
+  let activeLink = "home"
   //
   return (
     <div>

@@ -10,6 +10,7 @@ const ReposPage = () => {
   // create a signal to store the current page theme
   const [pageTheme, setPageTheme] = createSignal("default");
   const [statsBg, setStatsBg] = createSignal("000000");
+  const [cards, setCards] = createSignal(Site.data().sections.repos.cards);
   // Since the theme names from the site are different from the page, we need to map them;
   const changePageTheme = (newTheme) => {
     statsBgs = Site.data().statsBg;
@@ -22,6 +23,7 @@ const ReposPage = () => {
   //
   onMount(async () => {
     await Site.getRepos();
+    setCards(Site.data().sections.repos.cards);
   });
   //
   return (
@@ -33,10 +35,10 @@ const ReposPage = () => {
           </h1>
         </a>
         <div class="flex flex-wrap">
-          <For each={Site.data().sections.repos.cards}>
+          <For each={cards()}>
             {(repo, i) => (
               <div class="card w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 pl-2 pr-2 py-2">
-                <div class="card bg-neutral glass w-full h-full p-1 shadow-lg">
+                <div class="card bg-neutral glass w-full h-full p-1.5 shadow-lg">
                   <div
                     class="card shadow-lg w-full h-full"
                     style={`background:#${statsBg()}`}
@@ -47,7 +49,7 @@ const ReposPage = () => {
                         height="120"
                         decoding="async"
                         loading="lazy"
-                        class="w-full h-full"
+                        class="w-full h-full rounded"
                         src={`https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=${repo}&theme=${pageTheme()}&show_owner=true&hide_border=true`}
                         alt={repo}
                       />

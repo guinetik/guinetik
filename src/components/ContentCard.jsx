@@ -1,8 +1,8 @@
 import { FiExternalLink } from "solid-icons/fi";
 const ContentCard = (props) => {
   return (
-    <div class="card shadow-xl glass">
-      <figure class="rounded sm:h-96 md:h-60 lg:h-48 xl:h-72 2xl:h-96 w-full">
+    <div class="card">
+      <figure class="sm:h-96 md:h-60 lg:h-48 xl:h-72 2xl:h-96 w-full">
         <img
           width="320"
           height="192"

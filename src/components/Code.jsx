@@ -80,7 +80,7 @@ const CodePage = () => {
             />
             <CodeCard
               title="Github Contributions"
-              src={`https://activity-graph.herokuapp.com/graph?username=guinetik&hide_border=true&theme=${contribsTheme()}&bg_color=${statsBg()}`}
+              src={`https://github-readme-activity-graph.vercel.app/graph?username=guinetik&hide_border=true&theme=${contribsTheme()}&bg_color=${statsBg()}`}
             />
           </div>
           {/* GITHUB STREAKS */}

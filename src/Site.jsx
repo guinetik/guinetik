@@ -471,7 +471,7 @@ let Site = {
         {
           title: "PyScript L.A.B",
           description: "Experiments running python on the browser.",
-          image: "https://i.ibb.co/mzjWFMM/pyscript.png",
+          image: "https://i.ibb.co/YLtPLqz/pyscript.png",
           link: "https://guinetik.github.io/python-ds",
           tags: [
             {
@@ -492,6 +492,8 @@ let Site = {
     },
     repos: {
       cards: [
+        "colab-network-ec",
+        "kepler-exoplanets-review",
         "gui-configs",
         "rust-kvstore",
         "rust-box",
@@ -499,10 +501,9 @@ let Site = {
         "blockchain-ts",
         "tempo-cc-backend",
         "python-ds",
-        "sails-studies",
-        "epihack-appgen",
         "epihack",
-        "kepler-exoplanets-review",
+        "epihack-appgen",
+        "sails-studies",
         "ige-studies",
         "projectw",
         "TrollMyFace",

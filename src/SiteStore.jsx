@@ -8,7 +8,9 @@ import { graphql } from "https://cdn.skypack.dev/@octokit/graphql";
 const SiteContext = createContext();
 // create provider for context
 const SiteProvider = (props) => {
-  const token = decodeURIComponent(escape(window.atob( "Z2hwX3BOSVNVUmNUSFNnRXZnamJ3QXN3VURzQ1cyUFc0azRJNmZKYQ==" )));
+  // to avoid exposing the github key in the source code, I'm putting it in a env.local file that never gets checked in.
+  // Since I'm always building dist locally, I can maintain this file locally. if i was using github actions, I would set it up over there.
+  const token = decodeURIComponent(escape(window.atob(import.meta.env.VITE_GITHUB_KEY )));
   //
   const [getTheme, setTheme] = createSignal(Site.theme);
   document.documentElement.dataset.theme = Site.theme;
@@ -16,7 +18,7 @@ const SiteProvider = (props) => {
   const [getActive, setActive] = createSignal("home");
   // create a solid-js signal to store our site
   const [site, setSite] = createSignal(Site),
-    // lets encapsulate the site data in a Facade that will be responsible for mudating state
+    // lets encapsulate the site data in a Facade that will be responsible for mutating state
     SiteFacade = {
       // site data
       data: site,
@@ -25,7 +27,7 @@ const SiteProvider = (props) => {
         console.log("Hello world from context");
       },
       getRepos: async () => {
-        //console.log("fetching repos");
+        //console.log("fetching repos", token);
         const graphqlWithAuth = graphql.defaults({
           headers: {
             authorization: `token ${token}`,
@@ -43,6 +45,7 @@ const SiteProvider = (props) => {
           }
         `);
         const repos = response.user.repositories.nodes.map((repo) => repo.name);
+        //console.log("repos", repos);
         Site.sections.repos.cards = repos;
         setSite(Site);
       },
@@ -89,11 +92,11 @@ const SiteProvider = (props) => {
       },
       // execute a facade method, printing the state before and after the execution
       updateState: (fn, args) => {
-        console.group("Changing state...");
-        SiteFacade.printState();
+        //console.group("Changing state...");
+        //SiteFacade.printState();
         fn.apply(SiteFacade, args);
-        SiteFacade.printState();
-        console.groupEnd();
+        //SiteFacade.printState();
+        //console.groupEnd();
       },
     };
   //
