@@ -1,6 +1,6 @@
 import { createSignal, createContext, useContext } from "solid-js";
 import Site from "./Site";
-import { graphql } from "https://cdn.skypack.dev/@octokit/graphql";
+import { graphql } from "https://cdn.skypack.dev/pin/@octokit/graphql@v5.0.0-og38x9UCxfOFqy1S5nAJ/mode=imports,min/optimized/@octokit/graphql.js";
 /**
  * Implementing a site-wide context in solid-js
  */

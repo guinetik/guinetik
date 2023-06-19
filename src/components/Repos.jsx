@@ -22,8 +22,12 @@ const ReposPage = () => {
   createEffect(() => changePageTheme(siteTheme()));
   //
   onMount(async () => {
-    await Site.getRepos();
-    setCards(Site.data().sections.repos.cards);
+    try {
+      await Site.getRepos();
+      setCards(Site.data().sections.repos.cards);
+    } catch(err) {
+      console.log("Error fetching repos", err);
+    }
   });
   //
   return (
