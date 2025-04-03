@@ -1,6 +1,7 @@
 import { useSite } from "../SiteStore";
 import { FiMail } from "solid-icons/fi";
 import { FaBrandsLinkedin } from "solid-icons/fa";
+import { IoDocumentAttachOutline } from 'solid-icons/io'
 //
 const AboutPage = () => {
   const Site = useSite();
@@ -24,22 +25,29 @@ const AboutPage = () => {
               </div>
             </div>
             <div class="w-full lg:w-4/12 px-0 sm:px-4 lg:order-3 lg:text-right lg:self-center mt-20 sm:mt-0">
-              <div class="py-6 px-4 sm:mt-0">
-                <a
-                  class="btn btn-error font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
-                  href="mailto:guinetik@gmail.com"
-                >
-                  <FiMail size={16} class="mr-1" />
-                  EMAIL ME
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/guinetik/"
-                  target="_blank"
-                  class="float-none sm:float-right btn btn-info font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none ml-2 mb-1 ease-linear transition-all duration-150"
-                >
-                  <FaBrandsLinkedin size={16} class="mr-1" /> LINKED-IN
-                </a>
-              </div>
+            <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+  <a
+    class="btn btn-error font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none ease-linear transition-all duration-150 flex items-center"
+    href="mailto:guinetik@gmail.com"
+  >
+    <FiMail size={16} class="mr-1" />
+    EMAIL ME
+  </a>
+  <a
+    href="https://www.linkedin.com/in/guinetik/"
+    target="_blank"
+    class="btn btn-info font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none ease-linear transition-all duration-150 flex items-center"
+  >
+    <FaBrandsLinkedin size={16} class="mr-1" /> LINKED-IN
+  </a>
+  <a
+    href="https://www.linkedin.com/in/guinetik/"
+    target="_blank"
+    class="btn btn-info font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none ease-linear transition-all duration-150 flex items-center"
+  >
+    <IoDocumentAttachOutline size={16} class="mr-1" /> DOWNLOAD CV
+  </a>
+</div>
             </div>
             <div class="w-full lg:w-4/12 px-4 lg:order-1">
               <div class="flex justify-center py-4 lg:pt-4 sm:pt-8 pt-0 -ml-8 sm">

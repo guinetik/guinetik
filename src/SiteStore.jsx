@@ -10,7 +10,8 @@ const SiteContext = createContext();
 const SiteProvider = (props) => {
   // to avoid exposing the github key in the source code, I'm putting it in a env.local file that never gets checked in.
   // Since I'm always building dist locally, I can maintain this file locally. if i was using github actions, I would set it up over there.
-  const token = decodeURIComponent(escape(window.atob(import.meta.env.VITE_GITHUB_KEY )));
+  const key = import.meta.env.VITE_GITHUB_KEY;
+  const token = decodeURIComponent((window.atob(key)));
   //
   const [getTheme, setTheme] = createSignal(Site.theme);
   document.documentElement.dataset.theme = Site.theme;

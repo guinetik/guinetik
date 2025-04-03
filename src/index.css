@@ -16,3 +16,9 @@
     @apply text-accent;
     @apply font-bold;
 }
+
+
+iframe[src*="codepen.io"] {
+    pointer-events: auto !important;
+    overscroll-behavior: none !important;
+  }
