@@ -34,7 +34,7 @@ let Site = {
         title: "Githhub Repos",
         id: "repos",
         link: "#repos",
-      }
+      },
     ],
     mobile: [
       {
@@ -114,6 +114,18 @@ let Site = {
     halloween: "242424",
   },
   experiments: [
+    {
+      title: "WebGL Lava Lamp",
+      url: "https://codepen.io/guinetik/full/wBvNryx",
+      type: "codepen",
+      link: "https://codepen.io/guinetik/pen/wBvNryx",
+    },
+    {
+      title: "Particle Flow Simulation",
+      url: "https://codepen.io/guinetik/full/qEBgPRb",
+      type: "codepen",
+      link: "https://codepen.io/guinetik/pen/qEBgPRb",
+    },
     {
       title: "Solar System",
       url: "https://codepen.io/guinetik/full/YPzBQRB",
