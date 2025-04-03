@@ -96,8 +96,8 @@ const App = () => {
           <AboutPage />
           <CodePage />
           <ProjectsPage />
-          <ReposPage />
           <DemosPage />
+          <ReposPage />
         </main>
         <Footer />
       </div>

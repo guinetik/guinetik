@@ -26,15 +26,15 @@ let Site = {
         link: "#projects",
       },
       {
-        title: "Githhub Repos",
-        id: "repos",
-        link: "#repos",
-      },
-      {
         title: "Githhub Demos",
         id: "demos",
         link: "#demos",
       },
+      {
+        title: "Githhub Repos",
+        id: "repos",
+        link: "#repos",
+      }
     ],
     mobile: [
       {
