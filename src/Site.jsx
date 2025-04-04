@@ -115,6 +115,18 @@ let Site = {
   },
   experiments: [
     {
+      title: "Asteroid Mining Game",
+      url: "https://codepen.io/guinetik/full/jEOdKXR",
+      type: "codepen",
+      link: "https://codepen.io/guinetik/pen/jEOdKXR",
+    },
+    {
+      title: "Dino Game",
+      url: "https://codepen.io/guinetik/full/yyLZKKa",
+      type: "codepen",
+      link: "https://codepen.io/guinetik/pen/yyLZKKa",
+    },
+    {
       title: "WebGL Lava Lamp",
       url: "https://codepen.io/guinetik/full/wBvNryx",
       type: "codepen",
