@@ -16,7 +16,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 ## I'm guintetik
 
 - 🤓 I'm an eclectic coder with an agnostic view in software engineering.
-- 🌎 I live in Fortaleza/Pernambuco - Brazil
+- 🌎 I live in Fortaleza/CE - Brazil
 - 👨‍💼 I have over 10 years of experience coding for advertising, banking, public health and HR spaces.
 - 🏬 I've worked at [Cappen](https://cappen.com), [Ogilvy](https://ogilvy.com.br), [Accenture](https://accenture.com), [VanHack](https://vanhack.com), [Crossover](https://crossover.com) and [Epitrack](https://epitrack.com.br).
 - 🏢 I'm currently working at **[Foursys](https://foursys.com.br)**.
