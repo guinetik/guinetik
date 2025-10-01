@@ -1,5 +1,6 @@
 import { createSignal, createContext, useContext } from "solid-js";
 import Site from "./Site";
+import { useToken } from "./components/TokenProvider";
 import { graphql } from "https://cdn.skypack.dev/pin/@octokit/graphql@v5.0.0-og38x9UCxfOFqy1S5nAJ/mode=imports,min/optimized/@octokit/graphql.js";
 /**
  * Implementing a site-wide context in solid-js
@@ -8,12 +9,7 @@ import { graphql } from "https://cdn.skypack.dev/pin/@octokit/graphql@v5.0.0-og3
 const SiteContext = createContext();
 // create provider for context
 const SiteProvider = (props) => {
-  // to avoid exposing the github key in the source code, I'm putting it in a env.local file that never gets checked in.
-  // Since I'm always building dist locally, I can maintain this file locally. if i was using github actions, I would set it up over there.
-  const key = import.meta.env.VITE_GITHUB_KEY;
-  const a = decodeURIComponent(key);
-  const b = atob(a);
-  const token = atob(b);
+  const token = useToken();
   //
   const [getTheme, setTheme] = createSignal(Site.theme);
   document.documentElement.dataset.theme = Site.theme;
