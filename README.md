@@ -16,7 +16,7 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 ## I'm guintetik
 
 - 🤓 I'm an eclectic coder with an agnostic view in software engineering.
-- 🌎 I live in Recife/Pernambuco - Brazil
+- 🌎 I live in Fortaleza/CE - Brazil
 - 👨‍💼 I have over 10 years of experience coding for advertising, banking, public health and HR spaces.
 - 🏬 I've worked at [Cappen](https://cappen.com), [Ogilvy](https://ogilvy.com.br), [Accenture](https://accenture.com), [VanHack](https://vanhack.com), [Crossover](https://crossover.com) and [Epitrack](https://epitrack.com.br).
 - 🏢 I'm currently working at **[Foursys](https://foursys.com.br)**.
@@ -55,14 +55,18 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 
 ## Github Pages _demos_
 
-- [Wikipedia Search with Svelte](https://guinetik.github.io/vanguard-js/svelte-wikipedia-app/demo/)
-- [Kepler Exoplanet Review with Reactjs + Gun.js](https://guinetik.github.io/kepler-exoplanets-review/demo/)
-- [PyScript L.A.B](https://guinetik.github.io/python-ds/)
+- [Wikipedia Search with Svelte](https://wikipedia.guinetik.com)
+- [Kepler Exoplanets](https://exoplanets.guinetik.com)
+- [Penrose JS](https://guinetik.github.io/penrose-js)
 
 ## Talks and Older stuff
 
-- [Echo Chambers](https://pitch.com/embed/4034086b-a88d-4fe7-9d21-4d42383dcb42)
-- [Testes de Carga com Postman](https://docs.google.com/presentation/d/1dHSKsH5S1SKCSgJNQPHf2LN-korjOJBp/edit?usp=sharing&ouid=109727319701909715868&rtpof=true&sd=true)
+- [Echo Chambers - 2024](https://pitch.com/v/echo-chambers-no-colab-an5xra)
+- [Java Unit Testing - 2024](https://pitch.com/public/ea9b56c1-c003-4b59-9f30-23f6da64a563)
+- [Testes de Carga com Postman - 2024](https://docs.google.com/presentation/d/1dHSKsH5S1SKCSgJNQPHf2LN-korjOJBp/edit?usp=sharing&ouid=109727319701909715868&rtpof=true&sd=true)
+- [Git GUD - 2018](https://slides.com/guinetik/gitgud)
+- [Epihack 2015](https://slides.com/guinetik/epihack2015)
+- [Digital After all - 2013](https://slides.com/guinetik/digital-after-all)
 - [Cargo Collective](https://cargocollective.com/guinetik/)
 
 ## Me & code
@@ -112,71 +116,6 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
     />
   </div>
 </div>
-
-<br/>
-
-## Repos you may like to _snoop_ around
-
-<div
-  width="100%"
-  style="
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    justify-items: stretch;
-    align-items: center;
-  "
->
-  <a href="https://github.com/guinetik/gui-configs">
-    <center>
-      <img
-        align="center"
-        src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=gui-configs&theme=nightowl&show_owner=true"
-      />
-    </center>
-  </a>
-  <a href="https://github.com/guinetik/vanguard-js">
-    <center>
-      <img
-        align="center"
-        src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=vanguard-js&theme=nightowl&show_owner=true"
-      />
-    </center>
-  </a>
-  <a href="https://github.com/guinetik/tempo-cc-backend">
-    <center>
-      <img
-        align="center"
-        src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=tempo-cc-backend&theme=nightowl&show_owner=true"
-      />
-    </center>
-  </a>
-  <a href="https://github.com/guinetik/python-ds">
-    <center>
-      <img
-        align="center"
-        src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=python-ds&theme=nightowl&show_owner=true"
-      />
-    </center>
-  </a>
-  <a href="https://github.com/guinetik/sails-studies">
-    <center>
-      <img
-        align="center"
-        src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=sails-studies&theme=nightowl&show_owner=true"
-      />
-    </center>
-  </a>
-  <a href="https://github.com/guinetik/epihack-appgen">
-    <center>
-      <img
-        align="center"
-        src="https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=epihack-appgen&theme=nightowl&show_owner=true"
-      />
-    </center>
-  </a>
 </div>
 <br/>
 <br/>
