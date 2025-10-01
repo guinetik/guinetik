@@ -31,18 +31,18 @@ const defaultSiteData = {
 // create provider for context
 const SiteProvider = (props) => {
   const token = useToken();
-  
+
   // Fetch site data from API/JSON
   const fetchSiteData = async () => {
     try {
       // For now, fetch from public/site.json
       // Later this will be /api/site
       const response = await fetch('/site.json');
-      
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
       const data = await response.json();
       return data;
     } catch (err) {
@@ -53,7 +53,7 @@ const SiteProvider = (props) => {
 
   // Create resource for site data
   const [siteData] = createResource(fetchSiteData);
-  
+
   // Set default theme
   const defaultTheme = "guinetik";
   const [getTheme, setTheme] = createSignal(defaultTheme);
@@ -62,7 +62,7 @@ const SiteProvider = (props) => {
   const [getActive, setActive] = createSignal("home");
   // create a solid-js signal to store our site - start with null to indicate loading
   const [site, setSite] = createSignal(null);
-  
+
   // Update site data when API data loads
   createEffect(() => {
     const data = siteData();
@@ -75,23 +75,24 @@ const SiteProvider = (props) => {
       }
     }
   });
-  
+
   // lets encapsulate the site data in a Facade that will be responsible for mutating state
   const SiteFacade = {
-      // site data - return the signal value, not the signal itself
-      data: () => site(),
-      // testing if the context work
-      helloWorldFromContext: () => {
-        console.log("Hello world from context");
-      },
-      getRepos: async () => {
+    // site data - return the signal value, not the signal itself
+    data: () => site(),
+    // testing if the context work
+    helloWorldFromContext: () => {
+      console.log("Hello world from context");
+    },
+    getRepos: async () => {
+      if (token != null) {
         //console.log("fetching repos", token);
         const graphqlWithAuth = graphql.defaults({
           headers: {
             authorization: `token ${token}`,
           },
         });
-        const response  = await graphqlWithAuth(`
+        const response = await graphqlWithAuth(`
           {
             user(login: "guinetik") {
               repositories(first: 50, isFork: false, orderBy:{field: CREATED_AT, direction: DESC}) {
@@ -104,7 +105,7 @@ const SiteProvider = (props) => {
         `);
         const repos = response.user.repositories.nodes.map((repo) => repo.name);
         //console.log("repos", repos);
-        
+
         // Update the site data with new repos
         const currentSite = site();
         setSite({
@@ -117,68 +118,70 @@ const SiteProvider = (props) => {
             }
           }
         });
-      },
-      // updates the site's theme
-      setTheme: (t) => {
-        setTheme(t);
-        document.documentElement.dataset.theme = t;
-      },
-      getThemeSignal: () => {
-        return getTheme;
-      },
-      // adds a custom theme
-      addTheme: (t) => {
-        SiteFacade.updateState(() => {
-          let siteStore = site();
-          let themes = siteStore.themes;
-          themes.push(t);
-        });
-      },
-      setActiveLink: (menuId) => {
-        // Throttle to prevent too many calls
-        if (getActive() === menuId) return;
-        
-        //console.log("setActiveLink", menuId);
-        setActive(menuId);
-        const menu = site().menu.main;
-        const menuItem = menu.find((menuItem) => menuItem.id === menuId);
-        //
-        if (menuItem) {
-          try {
-            history.pushState(
-              menuItem,
-              "Guinetik :: " + menuItem.title,
-              "#" + menuItem.id
-            );
-          } catch (e) {
-            // Ignore history API errors
-            console.warn("History API error:", e);
-          }
-        } else {
-          try {
-            history.pushState(null, "Guinetik", "#");
-          } catch (e) {
-            // Ignore history API errors
-            console.warn("History API error:", e);
-          }
+      }
+      return null;
+    },
+    // updates the site's theme
+    setTheme: (t) => {
+      setTheme(t);
+      document.documentElement.dataset.theme = t;
+    },
+    getThemeSignal: () => {
+      return getTheme;
+    },
+    // adds a custom theme
+    addTheme: (t) => {
+      SiteFacade.updateState(() => {
+        let siteStore = site();
+        let themes = siteStore.themes;
+        themes.push(t);
+      });
+    },
+    setActiveLink: (menuId) => {
+      // Throttle to prevent too many calls
+      if (getActive() === menuId) return;
+
+      //console.log("setActiveLink", menuId);
+      setActive(menuId);
+      const menu = site().menu.main;
+      const menuItem = menu.find((menuItem) => menuItem.id === menuId);
+      //
+      if (menuItem) {
+        try {
+          history.pushState(
+            menuItem,
+            "Guinetik :: " + menuItem.title,
+            "#" + menuItem.id
+          );
+        } catch (e) {
+          // Ignore history API errors
+          console.warn("History API error:", e);
         }
-      },
-      getActiveLink: () => {
-        return getActive;
-      },
-      // prints current state
-      printState: () => {
-        console.log("CONTEXT:", "State:", site());
-      },
-      // execute a facade method, printing the state before and after the execution
-      updateState: (fn, args) => {
-        //console.group("Changing state...");
-        //SiteFacade.printState();
-        fn.apply(SiteFacade, args);
-        //SiteFacade.printState();
-        //console.groupEnd();
-      },
-    };
+      } else {
+        try {
+          history.pushState(null, "Guinetik", "#");
+        } catch (e) {
+          // Ignore history API errors
+          console.warn("History API error:", e);
+        }
+      }
+    },
+    getActiveLink: () => {
+      return getActive;
+    },
+    // prints current state
+    printState: () => {
+      console.log("CONTEXT:", "State:", site());
+    },
+    // execute a facade method, printing the state before and after the execution
+    updateState: (fn, args) => {
+      //console.group("Changing state...");
+      //SiteFacade.printState();
+      fn.apply(SiteFacade, args);
+      //SiteFacade.printState();
+      //console.groupEnd();
+    },
+  };
   //
   return (
     <SiteContext.Provider value={SiteFacade}>

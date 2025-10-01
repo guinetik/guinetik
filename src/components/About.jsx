@@ -101,7 +101,7 @@ const AboutPage = () => {
             <div class="text-accent-focus font-bold uppercase text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl mt-4">
               {Site.data().sections.about.aside}
             </div>
-            <div class="py-4 flex justify-center">
+            <div class="py-4 flex justify-center shields">
               <div class="flex flex-wrap w-full lg:w-9/12 px-4 justify-center">
                 <a href="https://wakatime.com/@guinetik" target="_blank">
                   <img
@@ -375,7 +375,7 @@ const AboutPage = () => {
           </div>
           <div class="flex flex-wrap justify-center my-10">
             <article class="prose prose-xl sm:prose-sm md:prose-md lg:prose-lg xl:prose-xl 2xl:prose-2xl max-w-none text-neutral font-medium">
-              {Site.data().sections.about.text}
+              {Site.data().sections.about.content}
             </article>
           </div>
         </div>
