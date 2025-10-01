@@ -1,5 +1,4 @@
-import { createSignal, createContext, useContext } from "solid-js";
-import Site from "./Site";
+import { createSignal, createContext, useContext, createEffect, createResource, Show } from "solid-js";
 import { useToken } from "./components/TokenProvider";
 import { graphql } from "https://cdn.skypack.dev/pin/@octokit/graphql@v5.0.0-og38x9UCxfOFqy1S5nAJ/mode=imports,min/optimized/@octokit/graphql.js";
 /**
@@ -7,20 +6,80 @@ import { graphql } from "https://cdn.skypack.dev/pin/@octokit/graphql@v5.0.0-og3
  */
 // create site context
 const SiteContext = createContext();
+// Default site data fallback
+const defaultSiteData = {
+  title: "Guinetik",
+  description: "meta stuff",
+  theme: "guinetik",
+  menu: {
+    main: [],
+    mobile: []
+  },
+  sections: {
+    about: { title: "About me", header: "Loading...", subheader: "Loading...", aside: "Loading..." },
+    demos: { cards: [] },
+    repos: { cards: [] },
+    projects: { cards: [] }
+  },
+  experiments: [],
+  themes: [],
+  statsTheme: {},
+  contribsTheme: {},
+  statsBg: {}
+};
+
 // create provider for context
 const SiteProvider = (props) => {
   const token = useToken();
-  //
-  const [getTheme, setTheme] = createSignal(Site.theme);
-  document.documentElement.dataset.theme = Site.theme;
+  
+  // Fetch site data from API/JSON
+  const fetchSiteData = async () => {
+    try {
+      // For now, fetch from public/site.json
+      // Later this will be /api/site
+      const response = await fetch('/site.json');
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      return data;
+    } catch (err) {
+      console.error("Error fetching site data:", err);
+      return defaultSiteData;
+    }
+  };
+
+  // Create resource for site data
+  const [siteData] = createResource(fetchSiteData);
+  
+  // Set default theme
+  const defaultTheme = "guinetik";
+  const [getTheme, setTheme] = createSignal(defaultTheme);
+  document.documentElement.dataset.theme = defaultTheme;
   //
   const [getActive, setActive] = createSignal("home");
-  // create a solid-js signal to store our site
-  const [site, setSite] = createSignal(Site),
-    // lets encapsulate the site data in a Facade that will be responsible for mutating state
-    SiteFacade = {
-      // site data
-      data: site,
+  // create a solid-js signal to store our site - start with null to indicate loading
+  const [site, setSite] = createSignal(null);
+  
+  // Update site data when API data loads
+  createEffect(() => {
+    const data = siteData();
+    if (data) {
+      setSite(data);
+      // Only set theme on initial load, not on every update
+      if (data.theme && data.theme !== defaultTheme && getTheme() === defaultTheme) {
+        setTheme(data.theme);
+        document.documentElement.dataset.theme = data.theme;
+      }
+    }
+  });
+  
+  // lets encapsulate the site data in a Facade that will be responsible for mutating state
+  const SiteFacade = {
+      // site data - return the signal value, not the signal itself
+      data: () => site(),
       // testing if the context work
       helloWorldFromContext: () => {
         console.log("Hello world from context");
@@ -45,15 +104,24 @@ const SiteProvider = (props) => {
         `);
         const repos = response.user.repositories.nodes.map((repo) => repo.name);
         //console.log("repos", repos);
-        Site.sections.repos.cards = repos;
-        setSite(Site);
+        
+        // Update the site data with new repos
+        const currentSite = site();
+        setSite({
+          ...currentSite,
+          sections: {
+            ...currentSite.sections,
+            repos: {
+              ...currentSite.sections.repos,
+              cards: repos
+            }
+          }
+        });
       },
       // updates the site's theme
       setTheme: (t) => {
-        SiteFacade.updateState(() => {
-          setSite({ ...site(), theme: t });
-        });
         setTheme(t);
+        document.documentElement.dataset.theme = t;
       },
       getThemeSignal: () => {
         return getTheme;
@@ -67,19 +135,32 @@ const SiteProvider = (props) => {
         });
       },
       setActiveLink: (menuId) => {
+        // Throttle to prevent too many calls
+        if (getActive() === menuId) return;
+        
         //console.log("setActiveLink", menuId);
         setActive(menuId);
         const menu = site().menu.main;
         const menuItem = menu.find((menuItem) => menuItem.id === menuId);
         //
         if (menuItem) {
-          history.pushState(
-            menuItem,
-            "Guinetik :: " + menuItem.title,
-            "#" + menuItem.id
-          );
+          try {
+            history.pushState(
+              menuItem,
+              "Guinetik :: " + menuItem.title,
+              "#" + menuItem.id
+            );
+          } catch (e) {
+            // Ignore history API errors
+            console.warn("History API error:", e);
+          }
         } else {
-          history.pushState(null, "Guinetik", "#");
+          try {
+            history.pushState(null, "Guinetik", "#");
+          } catch (e) {
+            // Ignore history API errors
+            console.warn("History API error:", e);
+          }
         }
       },
       getActiveLink: () => {
@@ -99,11 +180,18 @@ const SiteProvider = (props) => {
       },
     };
   //
-  setTheme(Site.theme);
-  //
   return (
     <SiteContext.Provider value={SiteFacade}>
-      {props.children}
+      <Show when={site()} fallback={
+        <div class="min-h-screen flex items-center justify-center bg-base-100">
+          <div class="flex flex-col items-center gap-4">
+            <div class="loading loading-spinner loading-lg text-primary"></div>
+            <div class="text-base-content text-lg font-medium">Loading...</div>
+          </div>
+        </div>
+      }>
+        {props.children}
+      </Show>
     </SiteContext.Provider>
   );
 };

@@ -4,10 +4,8 @@ const ThemeSwitcher = () => {
   const Site = useSite();
   let theme = "guinetik";
   onMount(async () => {
-    const obs = new MutationObserver(() => {
-      let theme = document.documentElement.dataset.theme;
-      Site.setTheme(theme);
-    }).observe(document.documentElement, { attributes: true });
+    // Remove the MutationObserver - it was causing circular updates
+    // The Site.setTheme() already handles DOM updates directly
   });
   return (
     <button class="dropdown inline">
