@@ -2,9 +2,26 @@ import { useSite } from "../SiteStore";
 import { FiMail } from "solid-icons/fi";
 import { FaBrandsLinkedin } from "solid-icons/fa";
 import { IoDocumentAttachOutline } from 'solid-icons/io'
-//
+
+// Get CV info based on browser language
+function getCVInfo() {
+  const browserLang = navigator.language || navigator.languages[0];
+  const isPortuguese = browserLang.startsWith('pt');
+  
+  const baseUrl = 'https://github.com/guinetik/cv/releases/latest/download';
+  const filename = isPortuguese 
+    ? 'CV_Joao_Guilherme_Portugues.pdf' 
+    : 'CV_Joao_Guilherme_English.pdf';
+  
+  return {
+    url: `${baseUrl}/${filename}`,
+    filename: filename
+  };
+}
+
 const AboutPage = () => {
   const Site = useSite();
+  const cvInfo = getCVInfo();
   return (
     <section id="section_about" class="bg-slate-100 w-full relative">
       <div class=" flex flex-col min-w-0 break-words w-full shadow-xl -my-4">
@@ -41,8 +58,8 @@ const AboutPage = () => {
     <FaBrandsLinkedin size={16} class="mr-1" /> LINKED-IN
   </a>
   <a
-    href="https://www.linkedin.com/in/guinetik/"
-    target="_blank"
+    href={cvInfo.url}
+    download={cvInfo.filename}
     class="btn btn-info font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none ease-linear transition-all duration-150 flex items-center"
   >
     <IoDocumentAttachOutline size={16} class="mr-1" /> DOWNLOAD CV

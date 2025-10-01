@@ -18,10 +18,10 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
 - 🤓 I'm an eclectic coder with an agnostic view in software engineering.
 - 🌎 I live in Fortaleza/CE - Brazil
 - 👨‍💼 I have over 10 years of experience coding for advertising, banking, public health and HR spaces.
-- 🏬 I've worked at [Cappen](https://cappen.com), [Ogilvy](https://ogilvy.com.br), [Accenture](https://accenture.com), [VanHack](https://vanhack.com), [Crossover](https://crossover.com) and [Epitrack](https://epitrack.com.br).
-- 🏢 I'm currently working at **[Foursys](https://foursys.com.br)**.
+- 🏬 I've worked at [Cappen](https://cappen.com), [Ogilvy](https://ogilvy.com.br), [Accenture](https://accenture.com), [VanHack](https://vanhack.com), [Crossover](https://crossover.com), [Epitrack](https://epitrack.com.br and [Foursys](https://foursys.com.br).
+- 🏢 I'm currently working at **[Bradesco](https://bradesco.com.br)**.
 - ⚙️ I do mostly software architecture focused on application development for the web
-- 🎓 Taking a masters degree in Software Engineering at [Cesar School](https://www.cesar.school/)
+- 🎓 I have Masters degree in Software Engineering from [Cesar School](https://www.cesar.school/)
 - 🌱 Learning **Data Science** and _Rust_
 - 💬 I'm into `java`, `nodejs`, `frontend`, `data science` & `devops`
 - 📫 Hit me up at: [guinetik@gmail.com](mailto:guinetik@gmail.com)
