@@ -2,7 +2,7 @@ import { FiExternalLink } from "solid-icons/fi";
 const ContentCard = (props) => {
   return (
     <div class="card">
-      <figure class="sm:h-96 md:h-60 lg:h-48 xl:h-72 2xl:h-96 w-full">
+      <figure class="sm:h-96 md:h-60 lg:h-48 xl:h-72 2xl:h-96 w-full" style="aspect-ratio: 5/3;">
         <img
           width="320"
           height="192"
@@ -11,6 +11,7 @@ const ContentCard = (props) => {
           class="object-cover object-center h-full w-full"
           src={props.card.image}
           alt={props.card.title}
+          style="aspect-ratio: 5/3;"
         />
       </figure>
       <div class="justify-end card-body bg-neutral">

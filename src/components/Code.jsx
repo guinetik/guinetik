@@ -15,6 +15,7 @@ const CodePage = () => {
             decoding="async"
             loading="lazy"
             class="card w-full"
+            style="aspect-ratio: 280/95;"
             alt={props.title}
             src={props.src}
           />

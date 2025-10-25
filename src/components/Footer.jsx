@@ -11,9 +11,9 @@ import {
 // create JSX component for footer
 const Footer = () => {
   return (
-    <footer class="text-center text-white bg-base-300">
-      <div class="pt-9 w-full">
-        <div class="flex justify-center mb-9 w-full">
+    <footer class="text-center text-white bg-base-300" style="contain: layout; padding: 36px 0 16px 0;">
+      <div class="w-full" style="padding-bottom: 36px;">
+        <div class="flex justify-center w-full" style="gap: 16px; padding: 0 16px;">
           <a
             href="https://github.com/guinetik"
             class="text-base-content mr-4 sm:mr-9"
@@ -73,8 +73,8 @@ const Footer = () => {
         </div>
       </div>
       <div
-        class="text-center text-neutral-content p-4 text-sm"
-        style="background-color: rgba(0, 0, 0, 0.2);"
+        class="text-center text-neutral-content text-sm"
+        style="background-color: rgba(0, 0, 0, 0.2); padding: 24px 16px; line-height: 1.6;"
       >
         © 2022
         <a class="text-info" href="https://guinetik.com" title="My Site">

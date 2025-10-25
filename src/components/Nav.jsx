@@ -1,53 +1,68 @@
 import ThemeSwitcher from "./ThemeSwitcher";
 import { useSite } from "../SiteStore";
-import { onMount, onCleanup, createSignal } from "solid-js";
+import { onMount, onCleanup, createSignal, createEffect, For } from "solid-js";
+import { createNavigationObserver } from "../lib/observer";
+
+/**
+ * Navigation component with IntersectionObserver for efficient active link tracking.
+ * Replaces scroll event listener with observer for better performance.
+ */
 const Nav = () => {
-  //
   const Site = useSite();
-  // creating a signal to save current scroll position
-  //  const [getScroll, setScroll] = createSignal(0);
   const [menu, setMenu] = createSignal([]);
-  const handleScroll = () => {
-    //setScroll(document.getElementById("drawer-content").scrollTop);
-    if (isInViewport(document.getElementById("section_experiment"))) {
-      Site.setActiveLink("home");
-    } else {
-      menu().forEach((item) => {
-        const id = item.id;
-        const element = document.getElementById(id);
-        if (isInViewport(element)) {
-          Site.setActiveLink(id);
-        }
-      });
+  let observer = null;
+  
+  // React to data changes
+  createEffect(() => {
+    const siteData = Site.data();
+    if (siteData && siteData.menu && siteData.menu.main) {
+      setMenu(siteData.menu.main);
     }
-  };
-  const isInViewport = (el) => {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  };
-  onCleanup(async () => {
-    document
-      .getElementById("drawer-content")
-      .removeEventListener("scroll", handleScroll);
   });
+  
+  onCleanup(() => {
+    // Disconnect observer on cleanup
+    if (observer) {
+      observer.disconnect();
+    }
+  });
+  
   onMount(() => {
-    activeLink = Site.getActiveLink();
-    setMenu(Site.data().menu.main);
-    document.getElementById("drawer-content").addEventListener(
-      "scroll",
-      function () {
-        handleScroll();
-      },
-      false
-    );
+    // Wait a bit for data to load, then set up observer
+    setTimeout(() => {
+      const menuData = menu();
+      if (menuData && menuData.length > 0) {
+        // Build array of all section IDs - sections use 'section_' prefix
+        const sectionIds = [
+          'section_experiment',
+          ...menuData.map(item => `section_${item.id}`)
+        ];
+        
+        // Create observer for all sections
+        observer = createNavigationObserver(
+          sectionIds,
+          (activeSectionId) => {
+            // Map section IDs to menu IDs (remove 'section_' prefix)
+            let menuId;
+            if (activeSectionId === 'section_experiment') {
+              menuId = 'home';
+            } else {
+              menuId = activeSectionId.replace('section_', '');
+            }
+            Site.setActiveLink(menuId);
+          },
+          {
+            // Trigger when section reaches top 100px of viewport
+            // Large bottom margin means only top portion matters
+            rootMargin: '-100px 0px -80% 0px',
+            threshold: 0
+          }
+        );
+      }
+    }, 100);
   });
-  let activeLink = "home"
+  
+  const activeLink = Site.getActiveLink()
   //
   return (
     <div>

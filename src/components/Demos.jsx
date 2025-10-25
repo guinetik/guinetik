@@ -1,8 +1,18 @@
 import { useSite } from "../SiteStore";
-import { For } from "solid-js";
+import { For, createSignal, createEffect } from "solid-js";
 import ContentCard from "./ContentCard";
 const DemosPage = () => {
   const Site = useSite();
+  const [cards, setCards] = createSignal([]);
+  
+  // React to site data changes (local load + API hydration)
+  createEffect(() => {
+    const siteData = Site.data();
+    if (siteData && siteData.sections && siteData.sections.demos) {
+      setCards(siteData.sections.demos.cards || []);
+    }
+  });
+  
   return (
     <section id="section_demos" class="bg-neutral-content pb-16 pt-8">
       <div class="container mx-auto mt-2">
@@ -12,7 +22,7 @@ const DemosPage = () => {
           </h1>
         </a>
         <div class="gallery p-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3 font-sans">
-          <For each={Site.data().sections.demos.cards}>
+          <For each={cards()}>
             {(card, i) => <ContentCard card={card} />}
           </For>
         </div>

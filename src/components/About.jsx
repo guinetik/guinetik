@@ -92,7 +92,8 @@ const AboutPage = () => {
                     height="20"
                     decoding="async"
                     loading="lazy"
-                    class="block w-min"
+                    class="block"
+                  style="height: 20px; width: auto;"
                     alt="WakaTime"
                     src="https://wakatime.com/badge/user/bd313e2a-0621-4893-8b72-922274e316de.svg"
                   />
@@ -106,7 +107,8 @@ const AboutPage = () => {
                     height="21"
                     decoding="async"
                     loading="lazy"
-                    class="block w-min"
+                    class="block"
+                  style="height: 20px; width: auto;"
                     alt="StackOverflow"
                     src="https://stackoverflow-badge.vercel.app/?userID=1293664"
                   />
@@ -117,7 +119,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="block w-min"
+                  class="block"
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?label=&message=languages:&color=blueviolet&style=flat-square"
                   alt="languages"
                 />
@@ -126,7 +129,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="block w-min"
+                  class="block"
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=java&label=&message=java&color=36465D&logoColor=AAA&style=flat-square"
                   alt="java"
                 />
@@ -135,7 +139,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="block w-min"
+                  class="block"
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=javascript&label=&message=javascript&color=36465D&logoColor=AAA&style=flat-square"
                   alt="javascript"
                 />
@@ -144,7 +149,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="block w-min"
+                  class="block"
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=typescript&label=&message=typescript&color=36465D&logoColor=AAA&style=flat-square"
                   alt="typescript"
                 />
@@ -153,7 +159,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="block w-min"
+                  class="block"
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=python&label=&message=python&color=36465D&logoColor=AAA&style=flat-square"
                   alt="python"
                 />
@@ -162,15 +169,19 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="block w-min"
+                  class="block"
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=rust&label=&message=rust&color=36465D&logoColor=AAA&style=flat-square"
                   alt="rust"
                 />
                 <span class="basis-full" />
                 <img
+                  width="38"
+                  height="20"
                   decoding="async"
                   loading="lazy"
-                  class="block w-min"
+                  class="block"
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?label=&message=libs:&color=important&style=flat-square"
                   alt="libs"
                 />
@@ -179,14 +190,18 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=springboot&label=&message=spring&color=36465D&logoColor=AAA&style=flat-square"
                   alt="spring"
                 />
                 <img
+                  width="67"
+                  height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=angular&label=&message=angular&color=36465D&logoColor=AAA&style=flat-square"
                   alt="angular"
                 />
@@ -195,7 +210,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=react&label=&message=react&color=36465D&logoColor=AAA&style=flat-square"
                   alt="react"
                 />
@@ -204,7 +220,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=svelte&label=&message=svelte&color=36465D&logoColor=AAA&style=flat-square"
                   alt="svelte"
                 />
@@ -213,7 +230,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=solid&label=&message=solidjs&color=36465D&logoColor=AAA&style=flat-square"
                   alt="solidjs"
                 />
@@ -222,7 +240,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=nodedotjs&label=&message=express&color=36465D&logoColor=AAA&style=flat-square"
                   alt="express"
                 />
@@ -231,7 +250,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=next.js&label=&message=nextjs&color=36465D&logoColor=AAA&style=flat-square"
                   alt="nextjs"
                 />
@@ -240,7 +260,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=pandas&label=&message=pandas&color=36465D&logoColor=AAA&style=flat-square"
                   alt="pandas"
                 />
@@ -249,7 +270,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=scikitlearn&label=&message=sklearn&color=36465D&logoColor=AAA&style=flat-square"
                   alt="sklearn"
                 />
@@ -258,7 +280,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=tensorflow&label=&message=tensorflow&color=36465D&logoColor=AAA&style=flat-square"
                   alt="tensorflow"
                 />
@@ -268,7 +291,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?label=&message=tools:&color=critical&style=flat-square"
                   alt="tools"
                 />
@@ -277,7 +301,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=jetbrains&label=&message=intellij&color=36465D&logoColor=AAA&style=flat-square"
                   alt="intellij"
                 />
@@ -286,7 +311,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=git&label=&message=git&color=36465D&logoColor=AAA&style=flat-square"
                   alt="git"
                 />
@@ -295,7 +321,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=jira&label=&message=jira&color=36465D&logoColor=AAA&style=flat-square"
                   alt="jira"
                 />
@@ -304,7 +331,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=docker&label=&message=docker&color=36465D&logoColor=AAA&style=flat-square"
                   alt="docker"
                 />
@@ -313,7 +341,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=nodedotjs&label=&message=nodejs&color=36465D&logoColor=AAA&style=flat-square&link"
                   alt="nodejs"
                 />
@@ -322,7 +351,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=amazonwebservices&label=&message=aws&color=36465D&logoColor=AAA&style=flat-square"
                   alt="aws"
                 />
@@ -331,7 +361,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=jenkins&label=&message=jenkins&color=36465D&logoColor=AAA&style=flat-square"
                   alt="jenkins"
                 />
@@ -340,7 +371,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=apachekafka&label=&message=kafka&color=36465D&logoColor=AAA&style=flat-square&link"
                   alt="apachekafka"
                 />
@@ -349,7 +381,8 @@ const AboutPage = () => {
                   height="20"
                   decoding="async"
                   loading="lazy"
-                  class="w-min"
+                  class=""
+                  style="height: 20px; width: auto;"
                   src="https://img.shields.io/static/v1?logo=redhat&label=&message=wildfly&color=36465D&logoColor=AAA&style=flat-square"
                   alt="wildfly"
                 />

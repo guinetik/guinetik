@@ -1,14 +1,19 @@
 import { lazy } from "solid-js";
 import DrawerSide from "./components/DrawerSide";
-import Footer from "./components/Footer";
+const Footer = lazy(() => import("./components/Footer"));
 import Nav from "./components/Nav";
 import ThemeSwitcher from "./components/ThemeSwitcher";
-const AboutPage = lazy(() => import("./components/About"));
+import LazySection from "./components/LazySection";
+
+// Above-the-fold: load immediately
 const Experiment = lazy(() => import("./components/Experiment"));
+
+// Below-the-fold: code-split and lazy-load via LazySection wrapper
+const AboutPage = lazy(() => import("./components/About"));
 const CodePage = lazy(() => import("./components/Code"));
+const ProjectsPage = lazy(() => import("./components/Projects"));
 const DemosPage = lazy(() => import("./components/Demos"));
 const ReposPage = lazy(() => import("./components/Repos"));
-const ProjectsPage = lazy(() => import("./components/Projects"));
 const App = () => {
   return (
     <div class="drawer transition-all">
@@ -92,12 +97,29 @@ const App = () => {
           </nav>
         </div>
         <main>
+          {/* Above-the-fold: Render immediately for fast LCP */}
           <Experiment />
-          <AboutPage />
-          <CodePage />
-          <ProjectsPage />
-          <DemosPage />
-          <ReposPage />
+          
+          {/* Below-the-fold: Lazy-load when approaching viewport */}
+          <LazySection rootMargin="600px">
+            <AboutPage />
+          </LazySection>
+          
+          <LazySection rootMargin="600px">
+            <CodePage />
+          </LazySection>
+          
+          <LazySection rootMargin="600px">
+            <ProjectsPage />
+          </LazySection>
+          
+          <LazySection rootMargin="600px">
+            <DemosPage />
+          </LazySection>
+          
+          <LazySection rootMargin="600px">
+            <ReposPage />
+          </LazySection>
         </main>
         <Footer />
       </div>

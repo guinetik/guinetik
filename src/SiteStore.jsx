@@ -1,9 +1,13 @@
-import { createSignal, createContext, useContext, createEffect, createResource, Show } from "solid-js";
+import { createSignal, createContext, useContext, createEffect, Show } from "solid-js";
+import { loadSiteDataOptimistic } from "./lib/dataLoader";
+
 /**
- * Implementing a site-wide context in solid-js
+ * Implementing a site-wide context in solid-js with optimized local-first data loading.
+ * Loads local site.json immediately for fast FCP/LCP, then hydrates from API.
  */
 // create site context
 const SiteContext = createContext();
+
 // Default site data fallback
 const defaultSiteData = {
   title: "Guinetik",
@@ -28,73 +32,59 @@ const defaultSiteData = {
 
 // create provider for context
 const SiteProvider = (props) => {
-
-  /**
-   * Fetches site data from API endpoint with fallback to local JSON.
-   * First attempts to load from api.guinetik.com/site/content,
-   * then falls back to local site.json if API fails,
-   * finally falls back to defaultSiteData if both fail.
-   * @returns {Promise<Object>} Site configuration object
-   */
-  const fetchSiteData = async () => {
-    // Try API endpoint first
-    try {
-      console.log("Attempting to fetch from API endpoint...");
-      const apiResponse = await fetch('https://api.guinetik.com/site/content');
-
-      if (apiResponse.ok) {
-        const data = await apiResponse.json();
-        console.log("✓ Successfully loaded data from API endpoint");
-        return data;
-      }
-      
-      throw new Error(`API returned status: ${apiResponse.status}`);
-    } catch (apiError) {
-      console.warn("API fetch failed, falling back to local site.json:", apiError.message);
-      
-      // Fallback to local site.json
-      try {
-        const jsonResponse = await fetch('/site.json');
-        
-        if (jsonResponse.ok) {
-          const data = await jsonResponse.json();
-          console.log("✓ Successfully loaded data from local site.json");
-          return data;
-        }
-        
-        throw new Error(`Local JSON returned status: ${jsonResponse.status}`);
-      } catch (jsonError) {
-        console.error("Both API and local JSON failed:", jsonError.message);
-        console.log("Using default site data");
-        return defaultSiteData;
-      }
-    }
-  };
-
-  // Create resource for site data
-  const [siteData] = createResource(fetchSiteData);
-
   // Set default theme
   const defaultTheme = "guinetik";
   const [getTheme, setTheme] = createSignal(defaultTheme);
   document.documentElement.dataset.theme = defaultTheme;
-  //
+  
   const [getActive, setActive] = createSignal("home");
-  // create a solid-js signal to store our site - start with null to indicate loading
-  const [site, setSite] = createSignal(null);
+  // create a solid-js signal to store our site - start with default to show content immediately
+  const [site, setSite] = createSignal(defaultSiteData);
 
-  // Update site data when API data loads
-  createEffect(() => {
-    const data = siteData();
-    if (data) {
-      setSite(data);
-      // Only set theme on initial load, not on every update
-      if (data.theme && data.theme !== defaultTheme && getTheme() === defaultTheme) {
-        setTheme(data.theme);
-        document.documentElement.dataset.theme = data.theme;
-      }
+  /**
+   * Load site data using local-first strategy.
+   * Local JSON loads immediately for fast render, API hydrates in background.
+   */
+  const loadSiteData = async () => {
+    try {
+      await loadSiteDataOptimistic({
+        localPath: '/site.json',
+        apiUrl: 'https://api.guinetik.com/site/content',
+        apiTimeout: 5000,
+        onLocalLoaded: (localData) => {
+          // Immediate render with local data
+          console.log('🎨 Rendering with local data');
+          setSite(localData);
+          
+          // Set theme from local data
+          if (localData.theme && localData.theme !== defaultTheme) {
+            setTheme(localData.theme);
+            document.documentElement.dataset.theme = localData.theme;
+          }
+        },
+        onApiLoaded: (apiData) => {
+          // Hydrate with fresh API data
+          console.log('🔄 Hydrating with API data');
+          setSite(apiData);
+          
+          // Update theme if different
+          if (apiData.theme && apiData.theme !== getTheme()) {
+            setTheme(apiData.theme);
+            document.documentElement.dataset.theme = apiData.theme;
+          }
+        },
+        onError: (error, source) => {
+          console.warn(`⚠️ Error loading from ${source}:`, error.message);
+        }
+      });
+    } catch (error) {
+      console.error('❌ All data sources failed:', error.message);
+      // Site is already initialized with defaultSiteData
     }
-  });
+  };
+
+  // Start loading data on mount
+  loadSiteData();
 
   // lets encapsulate the site data in a Facade that will be responsible for mutating state
   const SiteFacade = {
@@ -168,16 +158,7 @@ const SiteProvider = (props) => {
   //
   return (
     <SiteContext.Provider value={SiteFacade}>
-      <Show when={site()} fallback={
-        <div class="min-h-screen flex items-center justify-center bg-base-100">
-          <div class="flex flex-col items-center gap-4">
-            <div class="loading loading-spinner loading-lg text-primary"></div>
-            <div class="text-base-content text-lg font-medium">Loading...</div>
-          </div>
-        </div>
-      }>
-        {props.children}
-      </Show>
+      {props.children}
     </SiteContext.Provider>
   );
 };

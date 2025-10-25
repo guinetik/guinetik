@@ -10,7 +10,16 @@ const ReposPage = () => {
   // create a signal to store the current page theme
   const [pageTheme, setPageTheme] = createSignal("default");
   const [statsBg, setStatsBg] = createSignal("000000");
-  const [cards, setCards] = createSignal(Site.data().sections.repos.cards);
+  const [cards, setCards] = createSignal([]);
+  
+  // React to site data changes (local load + API hydration)
+  createEffect(() => {
+    const siteData = Site.data();
+    if (siteData && siteData.sections && siteData.sections.repos) {
+      setCards(siteData.sections.repos.cards || []);
+    }
+  });
+  
   // Since the theme names from the site are different from the page, we need to map them;
   const changePageTheme = (newTheme) => {
     statsBgs = Site.data().statsBg;
@@ -45,6 +54,7 @@ const ReposPage = () => {
                         decoding="async"
                         loading="lazy"
                         class="w-full h-full rounded"
+                        style="aspect-ratio: 400/120;"
                         src={`https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=${repo}&theme=${pageTheme()}&show_owner=true&hide_border=true`}
                         alt={repo}
                       />
