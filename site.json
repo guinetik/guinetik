@@ -20,12 +20,12 @@
         "link": "#projects"
       },
       {
-        "title": "Githhub Demos",
+        "title": "GitHub Demos",
         "id": "demos",
         "link": "#demos"
       },
       {
-        "title": "Githhub Repos",
+        "title": "GitHub Repos",
         "id": "repos",
         "link": "#repos"
       }
@@ -42,7 +42,7 @@
         "link": "#projects"
       },
       {
-        "title": "🔭 Githhub Demos",
+        "title": "🔭 GitHub Demos",
         "id": "demos",
         "link": "#demos"
       },
@@ -52,7 +52,7 @@
         "link": "#code"
       },
       {
-        "title": "🗃️ Githhub Repos",
+        "title": "🗃️ GitHub Repos",
         "id": "repos",
         "link": "#repos"
       }
@@ -187,14 +187,14 @@
       "header": "Hello world! This is Guinetik",
       "subheader": "I am a Software Architect and Creative Coder",
       "aside": "🌎 FORTALEZA, BRAZIL",
-      "content": "This is the content of the about me section"
+      "content": "<p>🤓 I'm an eclectic coder with an agnostic view in software engineering.</p><p>💼 I have over 10 years of experience coding for advertising, banking, public health and HR spaces.</p><p>🏬 I've worked at <a href=\"https://cappen.com\" rel=\"nofollow\">Cappen</a>, <a href=\"https://ogilvy.com.br\" rel=\"nofollow\">Ogilvy</a>, <a href=\"https://accenture.com\" rel=\"nofollow\">Accenture</a>, <a href=\"https://vanhack.com\" rel=\"nofollow\">VanHack</a>, <a href=\"https://crossover.com\" rel=\"nofollow\">Crossover</a>, <a href=\"https://epitrack.com.br\" rel=\"nofollow\">Epitrack</a> and <a href=\"https://foursys.com.br\" rel=\"nofollow\">Foursys</a>.</p><p>🧑‍💻 I'm currently working at <strong><a href=\"https://banco.bradesco\" rel=\"nofollow\">Bradesco</a></strong>.</p><p>⚙️ I do mostly software architecture focused on application development for the web.</p><p>🌱 Learning <strong>Data Science</strong> and <em>Rust</em>.</p><p>💬 Let's talk about <code>java</code>, <code>nodejs</code>, <code>frontend</code>, <code>data science</code> &amp; <code>devops</code>.</p><p>📫 Hit me up on: <a href=\"mailto:guinetik@gmail.com\">guinetik@gmail.com</a></p><p>🕹️ I'm into tech, games, infotainment and geek culture.</p>"
     },
     "demos": {
       "cards": [
         {
           "title": "ToastMan",
           "description": "A lightweight API testing tool built with Vue 3. Think Postman, but simpler and without the bloat.",
-          "image": "https://github.com/guinetik/ToastMan/raw/master/public/og-image.png",
+          "image": "/static/toastman.jpg",
           "link": "https://guinetik.github.io/ToastMan/",
           "tags": [
             {
@@ -206,7 +206,7 @@
         {
           "title": "SandboxJS",
           "description": "A modular JavaScript sandbox for testing and experimenting with code in a safe, isolated environment.",
-          "image": "https://github.com/guinetik/sandboxjs/raw/master/demo.png",
+          "image": "/static/sandboxjs.jpg",
           "link": "https://guinetik.github.io/sandboxjs/",
           "tags": [
             {
@@ -222,7 +222,7 @@
         {
           "title": "AMH2W",
           "description": "All my Homies Hate Windows - A Powershell utility library for Windows 10/11.",
-          "image": "https://repository-images.githubusercontent.com/975236995/0879b684-8d93-49ef-a759-5098254a2644",
+          "image": "/static/amh2w.jpg",
           "link": "https://github.com/guinetik/amh2w",
           "tags": [
             {
@@ -238,7 +238,7 @@
         {
           "title": "Svelte Wikipedia Search",
           "description": "Small wikipedia search app that uses the Wikimedia API to search articles. Features internationalization, dark mode and fetching the top posts of the day.",
-          "image": "https://i.ibb.co/XDgYqQv/wiki-search.png",
+          "image": "/static/wikipedia.jpg",
           "link": "https://wikipedia.guinetik.com",
           "tags": [
             {
@@ -254,7 +254,7 @@
         {
           "title": "Exoplanets Review",
           "description": "Aid for a search for a habitable planet. Discover and review exoplanets confirmed by the TESS probe. Post your comments and reviews about the planet.",
-          "image": "https://i.ibb.co/S7MfGhX/exoplanets.png",
+          "image": "/static/exoplanets.jpg",
           "link": "https://exoplanets.guinetik.com/",
           "tags": [
             {
@@ -274,7 +274,7 @@
         {
           "title": "PyScript L.A.B",
           "description": "Experiments running python on the browser.",
-          "image": "https://i.ibb.co/YLtPLqz/pyscript.png",
+          "image": "/static/pyscript.jpg",
           "link": "https://guinetik.github.io/python-ds",
           "tags": [
             {
@@ -320,8 +320,8 @@
       "cards": [
         {
           "title": "Bradesco Mortgage Engine (2017-2025)",
-          "description": "As a Softwre Architect for Foursys, I currently serve in the Bradesco Mortgate Engine where clients could simulate, contract and update their mortgage contracts. The engine is powered by Spring Boot microsservices that integrate with the Bank's core systems, an intermediary Backend-For-Frontend layer built on NodejS/Express and an Angular frontend.",
-          "image": "https://i.ibb.co/cgkkF1q/crim.png",
+          "description": "As a Software Architect for Foursys, I currently serve in the Bradesco Mortgage Engine where clients could simulate, contract and update their mortgage contracts. The engine is powered by Spring Boot microservices that integrate with the Bank's core systems, an intermediary Backend-For-Frontend layer built on NodeJS/Express and an Angular frontend.",
+          "image": "/static/crim.jpg",
           "link": "https://banco.bradesco/html/classic/produtos-servicos/emprestimo-e-financiamento/imoveis/index.shtm",
           "tags": [
             {
@@ -341,7 +341,7 @@
         {
           "title": "Mãos Conecta App (2021)",
           "description": "Visual Recognition search app for Artesan Brasil. This PWA built with Angular, connected to a JHipster backend allows the users to visually search for artworks from the Artesan Marketplace. Computer vision services powered by Azure Cognitive.",
-          "image": "/static/maos-conecta.png",
+          "image": "/static/maos-conecta.jpg",
           "link": "https://app.maosconecta.com.br/",
           "tags": [
             {
@@ -360,8 +360,8 @@
         },
         {
           "title": "Brasil Sem Corona (2021)",
-          "description": "Digital Epidemiology app built during the pandemic. Based on Spring and Spring Data, this app generated reports and metrics based on self reports of symptoms submited thorugh the Colab.re App. Data generated was used for academic studies on the COVID-19 pandemic.",
-          "image": "/static/brasil-sem-corona.png",
+          "description": "Digital Epidemiology app built during the pandemic. Based on Spring and Spring Data, this app generated reports and metrics based on self-reports of symptoms submitted through the Colab.re App. Data generated was used for academic studies on the COVID-19 pandemic.",
+          "image": "/static/brasil-sem-corona.jpg",
           "link": "https://brasilsemcorona.com.br/",
           "tags": [
             {
@@ -381,7 +381,7 @@
         {
           "title": "Staffeto Integrations for ADP (2020)",
           "description": "Integration app for RH Spaces. Staffeto integrates popular HRMS/HRIS software with ADP to allow seamless integrations for onboarding, terminations, direct deposit, payroll and other HR related integrations. Staffeto is able to connect to Taleo, SAP Success Factors, Bullhorn, Lever and other popular HR systems.",
-          "image": "https://www.staffeto.com/resources/img/side_1.jpg",
+          "image": "/static/staffeto.jpg",
           "link": "https://www.staffeto.com/",
           "tags": [
             {
@@ -404,8 +404,8 @@
         },
         {
           "title": "Santander Mortgage Engine (2019)",
-          "description": "While working for Accenture, I was in the Architecture team for the Santander Mortgate Engine where clients could simulate, contract and update their mortgage contracts. We created a Docker Swarm based infrastructure, with an Angular frontend and a Java Microsservices based API powered by SpringBoot. Front/Backend communication is powered by GraphQL.",
-          "image": "https://i.ibb.co/vjJ9D8T/webcasas.png",
+          "description": "While working for Accenture, I was in the Architecture team for the Santander Mortgage Engine where clients could simulate, contract and update their mortgage contracts. We created a Docker Swarm based infrastructure, with an Angular frontend and a Java Microservices based API powered by Spring Boot. Front/Backend communication is powered by GraphQL.",
+          "image": "/static/webcasas.jpg",
           "link": "https://www.negociosimobiliarios.santander.com.br/negociosimobiliarios/",
           "tags": [
             {
@@ -429,7 +429,7 @@
         {
           "title": "Epihack Rio (2015)",
           "description": "Epihack is a hackathon that involves epidemiologists and developers to create new approaches for digital disease detection. The first edition in Brazil was focused on Mass Gatherings tools to minimize risks during this kind of event. Epihack was supported by Skoll Global Threats Fund and organized by Epitrack with partnership of Instedd and Opendream.",
-          "image": "/static/epihack.png",
+          "image": "/static/epihack.jpg",
           "link": "https://www.youtube.com/watch?v=SzLGD2MBV34",
           "tags": [
             {
@@ -472,7 +472,7 @@
         },
         {
           "title": "Billboard NFC Magazine (2013)",
-          "description": "Billboard Brazil is the first magazine that actually plays music. It transmits an interactive playlist with the artists on the cover directly to the consumers smartphones: without any apps, downloads, Bluetooth or QR codes. 100%. Just usign NFC (Near Field Communication) technology stickers behind the cover. Now you are a reader and a listener.",
+          "description": "Billboard Brazil is the first magazine that actually plays music. It transmits an interactive playlist with the artists on the cover directly to the consumers smartphones: without any apps, downloads, Bluetooth or QR codes. 100%. Just using NFC (Near Field Communication) technology stickers behind the cover. Now you are a reader and a listener.",
           "image": "/static/billboard-magazine.jpg",
           "link": "https://www.youtube.com/watch?v=BBhNadcL4B0",
           "tags": [
@@ -488,7 +488,7 @@
         },
         {
           "title": "Coke Happiness Refill (2012)",
-          "description": "The first soda dispenser machine that gives free data credits. An arduino machine that allow users to connect their phone to their wifi. Once connected, the user could refil their mobile data credits and navigate the internet for free. Each 'refil' would give you an extra 100MB of data. The app is a fork of the Firefox browser for android with a custom skin and a Proxy Server where all the URLs are redirected to for free navigation.",
+          "description": "The first soda dispenser machine that gives free data credits. An Arduino machine that allows users to connect their phone to their wifi. Once connected, the user could refill their mobile data credits and navigate the internet for free. Each 'refill' would give you an extra 100MB of data. The app is a fork of the Firefox browser for Android with a custom skin and a Proxy Server where all the URLs are redirected to for free navigation.",
           "image": "/static/happiness-refill.jpg",
           "link": "https://vimeo.com/40519663",
           "tags": [
