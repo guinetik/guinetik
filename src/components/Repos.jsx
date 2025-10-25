@@ -1,5 +1,5 @@
 import { useSite } from "../SiteStore";
-import { createEffect, createSignal, onMount } from "solid-js";
+import { createEffect, createSignal, For } from "solid-js";
 //
 const ReposPage = () => {
   let statsBgs;
@@ -20,15 +20,6 @@ const ReposPage = () => {
   };
   // create an effect subscribing to the site theme signal
   createEffect(() => changePageTheme(siteTheme()));
-  //
-  onMount(async () => {
-    try {
-      await Site.getRepos();
-      setCards(Site.data().sections.repos.cards);
-    } catch(err) {
-      console.log("Error fetching repos", err);
-    }
-  });
   //
   return (
     <section id="section_repos" class="bg-base-300 pt-2 pb-16">

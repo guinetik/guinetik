@@ -1,6 +1,6 @@
 {
-  "name": "guinetik-ghpages",
-  "version": "1.0.96",
+  "name": "guinetik.com",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "start": "vite",

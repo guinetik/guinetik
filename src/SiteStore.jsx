@@ -1,6 +1,4 @@
 import { createSignal, createContext, useContext, createEffect, createResource, Show } from "solid-js";
-import { useToken } from "./components/TokenProvider";
-import { graphql } from "https://cdn.skypack.dev/pin/@octokit/graphql@v5.0.0-og38x9UCxfOFqy1S5nAJ/mode=imports,min/optimized/@octokit/graphql.js";
 /**
  * Implementing a site-wide context in solid-js
  */
@@ -30,24 +28,46 @@ const defaultSiteData = {
 
 // create provider for context
 const SiteProvider = (props) => {
-  const token = useToken();
 
-  // Fetch site data from API/JSON
+  /**
+   * Fetches site data from API endpoint with fallback to local JSON.
+   * First attempts to load from api.guinetik.com/site/content,
+   * then falls back to local site.json if API fails,
+   * finally falls back to defaultSiteData if both fail.
+   * @returns {Promise<Object>} Site configuration object
+   */
   const fetchSiteData = async () => {
+    // Try API endpoint first
     try {
-      // For now, fetch from public/site.json
-      // Later this will be /api/site
-      const response = await fetch('/site.json');
+      console.log("Attempting to fetch from API endpoint...");
+      const apiResponse = await fetch('https://api.guinetik.com/site/content');
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      if (apiResponse.ok) {
+        const data = await apiResponse.json();
+        console.log("✓ Successfully loaded data from API endpoint");
+        return data;
       }
-
-      const data = await response.json();
-      return data;
-    } catch (err) {
-      console.error("Error fetching site data:", err);
-      return defaultSiteData;
+      
+      throw new Error(`API returned status: ${apiResponse.status}`);
+    } catch (apiError) {
+      console.warn("API fetch failed, falling back to local site.json:", apiError.message);
+      
+      // Fallback to local site.json
+      try {
+        const jsonResponse = await fetch('/site.json');
+        
+        if (jsonResponse.ok) {
+          const data = await jsonResponse.json();
+          console.log("✓ Successfully loaded data from local site.json");
+          return data;
+        }
+        
+        throw new Error(`Local JSON returned status: ${jsonResponse.status}`);
+      } catch (jsonError) {
+        console.error("Both API and local JSON failed:", jsonError.message);
+        console.log("Using default site data");
+        return defaultSiteData;
+      }
     }
   };
 
@@ -83,43 +103,6 @@ const SiteProvider = (props) => {
     // testing if the context work
     helloWorldFromContext: () => {
       console.log("Hello world from context");
-    },
-    getRepos: async () => {
-      if (token != null) {
-        //console.log("fetching repos", token);
-        const graphqlWithAuth = graphql.defaults({
-          headers: {
-            authorization: `token ${token}`,
-          },
-        });
-        const response = await graphqlWithAuth(`
-          {
-            user(login: "guinetik") {
-              repositories(first: 50, isFork: false, orderBy:{field: CREATED_AT, direction: DESC}) {
-                nodes {
-                  name
-                }
-              }
-            }
-          }
-        `);
-        const repos = response.user.repositories.nodes.map((repo) => repo.name);
-        //console.log("repos", repos);
-
-        // Update the site data with new repos
-        const currentSite = site();
-        setSite({
-          ...currentSite,
-          sections: {
-            ...currentSite.sections,
-            repos: {
-              ...currentSite.sections.repos,
-              cards: repos
-            }
-          }
-        });
-      }
-      return null;
     },
     // updates the site's theme
     setTheme: (t) => {

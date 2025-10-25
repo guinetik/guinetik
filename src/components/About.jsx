@@ -3,25 +3,8 @@ import { FiMail } from "solid-icons/fi";
 import { FaBrandsLinkedin } from "solid-icons/fa";
 import { IoDocumentAttachOutline } from 'solid-icons/io'
 
-// Get CV info based on browser language
-function getCVInfo() {
-  const browserLang = navigator.language || navigator.languages[0];
-  const isPortuguese = browserLang.startsWith('pt');
-
-  const baseUrl = 'https://github.com/guinetik/cv/releases/latest/download';
-  const filename = isPortuguese
-    ? 'CV_Joao_Guilherme_Portugues.pdf'
-    : 'CV_Joao_Guilherme_English.pdf';
-
-  return {
-    url: `${baseUrl}/${filename}`,
-    filename: filename
-  };
-}
-
 const AboutPage = () => {
   const Site = useSite();
-  const cvInfo = getCVInfo();
   return (
     <section id="section_about" class="bg-slate-100 w-full relative">
       <div class=" flex flex-col min-w-0 break-words w-full shadow-xl -my-4">
@@ -35,7 +18,7 @@ const AboutPage = () => {
                   decoding="async"
                   loading="lazy"
                   alt="Hey!"
-                  src="https://i.imgur.com/IC4Fu0K.png"
+                  src="/static/portrait.png"
                   class="shadow-xl rounded-full h-auto align-middle border-2 absolute -m-20 -ml-20 lg:-ml-16 border-neutral-content"
                   style="max-width: 150px;"
                 />
@@ -58,8 +41,8 @@ const AboutPage = () => {
                   <FaBrandsLinkedin size={16} class="mr-1" /> LINKED-IN
                 </a>
                 <a
-                  href={cvInfo.url}
-                  download={cvInfo.filename}
+                  href="https://cv.guinetik.com"
+                  target="_blank"
                   class="btn btn-info font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none ease-linear transition-all duration-150 flex items-center"
                 >
                   <IoDocumentAttachOutline size={16} class="mr-1" /> DOWNLOAD CV
@@ -374,9 +357,10 @@ const AboutPage = () => {
             </div>
           </div>
           <div class="flex flex-wrap justify-center my-10">
-            <article class="prose prose-xl sm:prose-sm md:prose-md lg:prose-lg xl:prose-xl 2xl:prose-2xl max-w-none text-neutral font-medium">
-              {Site.data().sections.about.content}
-            </article>
+            <article 
+              class="prose prose-xl sm:prose-sm md:prose-md lg:prose-lg xl:prose-xl 2xl:prose-2xl max-w-none text-neutral font-medium"
+              innerHTML={Site.data().sections.about.content}
+            />
           </div>
         </div>
       </div>
