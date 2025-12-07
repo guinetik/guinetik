@@ -1,5 +1,6 @@
 import { createSignal, createContext, useContext, createEffect, Show } from "solid-js";
 import { loadSiteDataOptimistic } from "./lib/dataLoader";
+import { trackPageView } from "./lib/analytics";
 
 /**
  * Implementing a site-wide context in solid-js with optimized local-first data loading.
@@ -126,6 +127,8 @@ const SiteProvider = (props) => {
             "Guinetik :: " + menuItem.title,
             "#" + menuItem.id
           );
+          // Track as virtual pageview
+          trackPageView("#" + menuItem.id, "Guinetik :: " + menuItem.title);
         } catch (e) {
           // Ignore history API errors
           console.warn("History API error:", e);
@@ -133,6 +136,8 @@ const SiteProvider = (props) => {
       } else {
         try {
           history.pushState(null, "Guinetik", "#");
+          // Track home as virtual pageview
+          trackPageView("#home", "Guinetik :: Home");
         } catch (e) {
           // Ignore history API errors
           console.warn("History API error:", e);

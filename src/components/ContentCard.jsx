@@ -1,5 +1,11 @@
 import { FiExternalLink } from "solid-icons/fi";
+import { trackCardLaunch } from "../lib/analytics";
+
 const ContentCard = (props) => {
+  const handleLaunch = () => {
+    trackCardLaunch(props.card, props.section || 'unknown');
+  };
+
   return (
     <div class="card">
       <figure class="sm:h-96 md:h-60 lg:h-48 xl:h-72 2xl:h-96 w-full" style="aspect-ratio: 5/3;">
@@ -27,6 +33,7 @@ const ContentCard = (props) => {
           class="btn btn-secondary btn-sm sm:btn-md gap-2 md:btn-sm lg:btn-sm xl:btn-sm 2xl:btn-md"
           href={props.card.link}
           target="_blank"
+          onClick={handleLaunch}
         >
           <FiExternalLink size={16} />
           LAUNCH

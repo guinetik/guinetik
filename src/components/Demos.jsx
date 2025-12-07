@@ -23,7 +23,7 @@ const DemosPage = () => {
         </a>
         <div class="gallery p-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3 font-sans">
           <For each={cards()}>
-            {(card, i) => <ContentCard card={card} />}
+            {(card, i) => <ContentCard card={card} section="demos" />}
           </For>
         </div>
       </div>

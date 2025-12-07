@@ -1,5 +1,6 @@
 import { useSite } from "../SiteStore";
 import { createEffect, createSignal, For } from "solid-js";
+import { trackCardLaunch } from "../lib/analytics";
 //
 const ReposPage = () => {
   let statsBgs;
@@ -47,7 +48,10 @@ const ReposPage = () => {
                     class="card shadow-lg w-full h-full"
                     style={`background:#${statsBg()}`}
                   >
-                    <a href={`https://github.com/guinetik/${repo}`}>
+                    <a
+                      href={`https://github.com/guinetik/${repo}`}
+                      onClick={() => trackCardLaunch({ title: repo, link: `https://github.com/guinetik/${repo}` }, 'repos')}
+                    >
                       <img
                         width="400"
                         height="120"
