@@ -55,7 +55,7 @@ const ReposPage = () => {
                         loading="lazy"
                         class="w-full h-full rounded"
                         style="aspect-ratio: 400/120;"
-                        src={`https://github-readme-stats.vercel.app/api/pin/?username=guinetik&repo=${repo}&theme=${pageTheme()}&show_owner=true&hide_border=true`}
+                        src={`https://guinetik-github-stats.vercel.app/api/pin/?username=guinetik&repo=${repo}&theme=${pageTheme()}&show_owner=true&hide_border=true`}
                         alt={repo}
                       />
                     </a>

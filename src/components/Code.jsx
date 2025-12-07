@@ -65,19 +65,19 @@ const CodePage = () => {
             {/* MOST USED LANGUAGES */}
             <CodeCard
               title="Most Used Languages"
-              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=10&theme=${pageTheme()}&layout=compact&count_private=true&cache_seconds=1800&hide_border=true`}
+              src={`https://guinetik-github-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=10&theme=${pageTheme()}&layout=compact&count_private=true&cache_seconds=1800&hide_border=true`}
             />
             {/* WAKA TIME */}
             <CodeCard
               title="Wakatime"
-              src={`https://github-readme-stats.vercel.app/api/wakatime?username=guinetik&theme=${pageTheme()}&count_private=true&cache_seconds=1800&langs_count=16&layout=compact&hide_border=true`}
+              src={`https://guinetik-github-stats.vercel.app/api/wakatime?username=guinetik&theme=${pageTheme()}&count_private=true&cache_seconds=1800&langs_count=16&layout=compact&hide_border=true`}
             />
           </div>
           {/* GITHUB STATS */}
           <div class="card w-full grid gap-4 grid-cols-1 lg:grid-cols-2">
             <CodeCard
               title="GithubStats"
-              src={`https://github-readme-stats.vercel.app/api?username=guinetik&show_icons=true&theme=${pageTheme()}&count_private=true&hide=issues,contribs&hide_border=true`}
+              src={`https://guinetik-github-stats.vercel.app/api?username=guinetik&show_icons=true&theme=${pageTheme()}&count_private=true&hide=issues,contribs&hide_border=true`}
             />
             <CodeCard
               title="Github Contributions"

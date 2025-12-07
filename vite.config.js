@@ -9,6 +9,9 @@ import viteCompression from 'vite-plugin-compression';
  * - Code splitting via dynamic imports
  */
 export default defineConfig({
+  server: {
+    port: 9999,
+  },
   plugins: [
     solidPlugin(),
     
