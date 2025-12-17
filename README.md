@@ -132,7 +132,7 @@
 <table>
 <tr>
 <td width="33%" valign="top">
-<h3><a href="https://cargocollective.com/guinetik/">Coke Happiness Refill</a></h3>
+<h3><a href="https://vimeo.com/40519663">Coke Happiness Refill</a></h3>
 <a href="https://vimeo.com/40519663">
 <img src="https://guinetik.com/static/happiness-refill.jpg" width="100%"/>
 </a>
