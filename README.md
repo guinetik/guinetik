@@ -13,10 +13,13 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/guinetik/">
-    <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="mailto:guinetik@gmail.com">
-    <img src="https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white" alt="Gmail"/>
+  <a href="https://twitter.com/guinetik">
+    <img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=x&logoColor=white" alt="Twitter"/>
+  </a>
+  <a href="https://threads.net/@guinetik">
+    <img src="https://img.shields.io/badge/-Threads-000000?style=flat-square&logo=threads&logoColor=white" alt="Threads"/>
   </a>
   <a href="https://www.youtube.com/channel/UCj8l9a39AcNVj_pdtjTmpfw">
     <img src="https://img.shields.io/youtube/channel/views/UCj8l9a39AcNVj_pdtjTmpfw" alt="Youtube"/>
@@ -29,6 +32,15 @@
   </a>
   <a href="https://wakatime.com/@bd313e2a-0621-4893-8b72-922274e316de">
     <img src="https://wakatime.com/badge/user/bd313e2a-0621-4893-8b72-922274e316de.svg" alt="Wakatime"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="#projects">
+    <img src="https://img.shields.io/badge/-Projects-FF6B6B?style=for-the-badge" alt="Projects"/>
+  </a>
+  <a href="#github-demos">
+    <img src="https://img.shields.io/badge/-Demos-4ECDC4?style=for-the-badge" alt="Demos"/>
   </a>
 </p>
 
@@ -89,26 +101,26 @@
 <table>
 <tr>
 <td width="33%" valign="top">
+<h3><a href="https://exoplanets.guinetik.com/">Exoplanets</a></h3>
 <a href="https://exoplanets.guinetik.com/">
 <img src="https://admin.guinetik.com/files/exoplanets1.webp" width="100%"/>
 </a>
-<h3><a href="https://exoplanets.guinetik.com/">Exoplanets</a></h3>
 <p>Exploring 6,000+ confirmed worlds beyond our solar system. Interactive 3D visualizations of NASA's exoplanet data.</p>
 <code>ReactJs</code> <code>Tailwind CSS</code> <code>Firebase</code> <code>ThreeJS</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://wikipedia.guinetik.com">Wikipedia Search</a></h3>
 <a href="https://wikipedia.guinetik.com">
 <img src="https://admin.guinetik.com/files/wikipedia.webp" width="100%"/>
 </a>
-<h3><a href="https://wikipedia.guinetik.com">Wikipedia Search</a></h3>
 <p>Small wikipedia search app that uses the Wikimedia API to search articles.</p>
 <code>Svelte</code> <code>Tailwind CSS</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://graphjs.guinetik.com">GraphJS</a></h3>
 <a href="https://graphjs.guinetik.com">
 <img src="https://admin.guinetik.com/files/graphjs.webp" width="100%"/>
 </a>
-<h3><a href="https://graphjs.guinetik.com">GraphJS</a></h3>
 <p>A high-performance graph theory Javascript Library with interactive demos and worker-first architecture.</p>
 <code>Network Analysis</code> <code>Graph Theory</code>
 </td>
@@ -120,26 +132,26 @@
 <table>
 <tr>
 <td width="33%" valign="top">
+<h3><a href="https://cargocollective.com/guinetik/">Coke Happiness Refill</a></h3>
 <a href="https://vimeo.com/40519663">
 <img src="https://guinetik.com/static/happiness-refill.jpg" width="100%"/>
 </a>
-<h3><a href="https://cargocollective.com/guinetik/">Coke Happiness Refill</a></h3>
 <p>The first soda dispenser machine that gives free data credits. An Arduino machine that allows users to connect their phone to their Wifi. </p>
 <code>Creative Tech</code> <code>Android</code> <code>Java</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://vimeo.com/68697167">Billboard Fan Check Machine</a></h3>
 <a href="https://vimeo.com/68697167">
 <img src="https://guinetik.com/static/billboard-fan-check-machine.jpg" width="100%"/>
 </a>
-<h3><a href="https://vimeo.com/68697167">Billboard Fan Check Machine</a></h3>
 <p>A machine that gives away a free magazine if you prove you're a fan of the artist on the cover.</p>
 <code>Raspberry Pi</code> <code>C++</code> <code>Arduino</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://www.youtube.com/watch?v=BBhNadcL4B0">Billboard NFC Magazine</a></h3>
 <a href="https://www.youtube.com/watch?v=BBhNadcL4B0">
 <img src="https://guinetik.com/static/billboard-magazine.jpg" width="100%"/>
 </a>
-<h3><a href="https://www.youtube.com/watch?v=BBhNadcL4B0">Billboard NFC Magazine</a></h3>
 <p>NFC-enabled magazine pages that triggered interactive digital content when tapped with smartphones.</p>
 <code>NFC Tags</code> <code>Angular</code>
 </td>
@@ -151,78 +163,78 @@
 <table>
 <tr>
 <td width="33%" valign="top">
+<h3><a href="https://toastman.guinetik.com">ToastMan</a></h3>
 <a href="https://toastman.guinetik.com">
 <img src="https://admin.guinetik.com/files/toastman.webp" width="100%"/>
 </a>
-<h3><a href="https://toastman.guinetik.com">ToastMan</a></h3>
 <p>A lightweight API testing tool built with Vue 3. Think Postman, but simpler and without the bloat.</p>
 <code>Vue 3</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://sandboxjs.guinetik.com">SandboxJS</a></h3>
 <a href="https://sandboxjs.guinetik.com">
 <img src="https://admin.guinetik.com/files/sandboxjs.webp" width="100%"/>
 </a>
-<h3><a href="https://sandboxjs.guinetik.com">SandboxJS</a></h3>
 <p>A modular JavaScript sandbox for testing and experimenting with code in a safe, isolated environment.</p>
 <code>Vanilla JS</code> <code>ACE Editor</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://pyscript.guinetik.com">PyScript L.A.B</a></h3>
 <a href="https://pyscript.guinetik.com">
 <img src="https://guinetik.com/static/pyscript.webp" width="100%"/>
 </a>
-<h3><a href="https://pyscript.guinetik.com">PyScript L.A.B</a></h3>
 <p>Experiments running python on the browser.</p>
 <code>Python</code> <code>Tailwind CSS</code> <code>Svelte</code>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top">
+<h3><a href="https://py-home-gallery.onrender.com/">Python Home Gallery</a></h3>
 <a href="https://py-home-gallery.onrender.com/">
 <img src="https://guinetik.com/static/pygallery.webp" width="100%"/>
 </a>
-<h3><a href="https://py-home-gallery.onrender.com/">Python Home Gallery</a></h3>
 <p>Simple photo/video gallery using Isotope with autogenerated thumbnails via ffmpeg.</p>
 <code>Python</code> <code>FFmpeg</code> <code>Nginx</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://terminaljavadocs.guinetik.com">Terminal Java Docs</a></h3>
 <a href="https://terminaljavadocs.guinetik.com">
 <img src="https://terminaljavadocs.guinetik.com/images/og-image.png" width="100%"/>
 </a>
-<h3><a href="https://terminaljavadocs.guinetik.com">Terminal Java Docs</a></h3>
 <p>Alternative presentation for Java documentation</p>
 <code>Java</code> <code>Maven</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://hexafun.guinetik.com">HexaFun</a></h3>
 <a href="https://hexafun.guinetik.com">
 <img src="https://hexafun.guinetik.com/images/og-image.png" width="100%"/>
 </a>
-<h3><a href="https://hexafun.guinetik.com">HexaFun</a></h3>
 <p>Functional primitives for coding Hexagonal Architecture in Java</p>
 <code>Java</code> <code>Hexagonal Architecture</code>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top">
+<h3><a href="https://cryptowasm.guinetik.com/">crypto.wasm</a></h3>
 <a href="https://cryptowasm.guinetik.com/">
 <img src="https://admin.guinetik.com/files/cryptowasm.webp" width="100%"/>
 </a>
-<h3><a href="https://cryptowasm.guinetik.com/">crypto.wasm</a></h3>
 <p>WebAssembly cryptography library featuring AES-128-CBC, XOR, Caesar cipher, ROT13, and Base64 encoding.</p>
 <code>WebAssembly</code> <code>Rust</code> <code>Typescript</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://guinetik.github.io/penrose-js/">Penrose-JS</a></h3>
 <a href="https://guinetik.github.io/penrose-js/">
 <img src="https://admin.guinetik.com/files/penrosejs.webp" width="100%"/>
 </a>
-<h3><a href="https://guinetik.github.io/penrose-js/">Penrose-JS</a></h3>
 <p>Pure JS implementations of the Penrose Tiling. Renders in canvas or bitmap.</p>
 <code>Javascript</code> <code>Generative Art</code>
 </td>
 <td width="33%" valign="top">
+<h3><a href="https://github.com/guinetik/amh2w">AMH2W</a></h3>
 <a href="https://github.com/guinetik/amh2w">
 <img src="https://guinetik.com/static/amh2w.jpg" width="100%"/>
 </a>
-<h3><a href="https://github.com/guinetik/amh2w">AMH2W</a></h3>
 <p>All my Homies Hate Windows - A Powershell utility library for Windows 10/11.</p>
 <code>PowerShell</code> <code>ACE Editor</code>
 </td>
