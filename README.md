@@ -2,23 +2,42 @@
 
 # Hello, friend 👋
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guinetik/)](https://www.linkedin.com/in/guinetik/)
-[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:guinetik@gmail.com)](mailto:guinetik@gmail.com)
-[![Youtube Badge](https://img.shields.io/youtube/channel/views/UCj8l9a39AcNVj_pdtjTmpfw)](https://www.youtube.com/channel/UCj8l9a39AcNVj_pdtjTmpfw)
-[![Stackoverflow](https://github.com/Rishit-dagli/Rishit-dagli/blob/master/badges/stackoverflow.svg)](https://stackoverflow.com/users/1293664/guinetik)
-<a href="https://stackoverflow.com/users/1293664/guinetik" target="_blank">
-<img alt="StackOverflow"
-src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
-</a>
-[![Visits](https://komarev.com/ghpvc/?username=guinetik&label=Profile%20views&color=blueviolet&style=flat&label=Visitors:)](https://www.github.com/guinetik/)
-[![wakatime](https://wakatime.com/badge/user/bd313e2a-0621-4893-8b72-922274e316de.svg)](https://wakatime.com/@bd313e2a-0621-4893-8b72-922274e316de)
+<p align="center">
+  <a href="https://guinetik.com">
+    <img src="https://img.shields.io/badge/-guinetik.com-8B5CF6?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/>
+  </a>
+  <a href="https://cv.guinetik.com">
+    <img src="https://img.shields.io/badge/-Download_CV-10B981?style=for-the-badge&logo=readme&logoColor=white" alt="CV"/>
+  </a>
+</p>
 
-## I'm guintetik
+<p align="center">
+  <a href="https://www.linkedin.com/in/guinetik/">
+    <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:guinetik@gmail.com">
+    <img src="https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white" alt="Gmail"/>
+  </a>
+  <a href="https://www.youtube.com/channel/UCj8l9a39AcNVj_pdtjTmpfw">
+    <img src="https://img.shields.io/youtube/channel/views/UCj8l9a39AcNVj_pdtjTmpfw" alt="Youtube"/>
+  </a>
+  <a href="https://stackoverflow.com/users/1293664/guinetik">
+    <img src="https://stackoverflow-badge.vercel.app/?userID=1293664" alt="StackOverflow"/>
+  </a>
+  <a href="https://www.github.com/guinetik/">
+    <img src="https://komarev.com/ghpvc/?username=guinetik&label=Profile%20views&color=blueviolet&style=flat&label=Visitors:" alt="Visits"/>
+  </a>
+  <a href="https://wakatime.com/@bd313e2a-0621-4893-8b72-922274e316de">
+    <img src="https://wakatime.com/badge/user/bd313e2a-0621-4893-8b72-922274e316de.svg" alt="Wakatime"/>
+  </a>
+</p>
 
+- 🪪 My name is João Guilherme
+- 🧑‍💻 I'm known as `guinetik` online
 - 🤓 I'm an eclectic coder with an agnostic view in software engineering.
 - 🌎 I live in Fortaleza/CE - Brazil
 - 👨‍💼 I have over 10 years of experience coding for advertising, banking, public health and HR spaces.
-- 🏬 I've worked at [Cappen](https://cappen.com), [Ogilvy](https://ogilvy.com.br), [Accenture](https://accenture.com), [VanHack](https://vanhack.com), [Crossover](https://crossover.com), [Epitrack](https://epitrack.com.br and [Foursys](https://foursys.com.br).
+- 🏬 I've worked at [Cappen](https://cappen.com), [Ogilvy](https://ogilvy.com.br), [Accenture](https://accenture.com), [VanHack](https://vanhack.com), [Crossover](https://crossover.com), [Epitrack](https://epitrack.com.br) and [Foursys](https://foursys.com.br).
 - 🏢 I'm currently working at **[Bradesco](https://bradesco.com.br)**.
 - ⚙️ I do mostly software architecture focused on application development for the web
 - 🎓 I have Masters degree in Software Engineering from [Cesar School](https://www.cesar.school/)
@@ -53,69 +72,171 @@ src="https://stackoverflow-badge.vercel.app/?userID=1293664" />
   ![oracle](https://img.shields.io/static/v1?logo=oracle&label=&message=oracle&color=36465D&logoColor=AAA&style=flat-square&link=)
   ![wildfly](https://img.shields.io/static/v1?logo=redhat&label=&message=wildfly&color=36465D&logoColor=AAA&style=flat-square)
 
-## Github Pages _demos_
+## Code & Me
 
-- [Wikipedia Search with Svelte](https://wikipedia.guinetik.com)
-- [Kepler Exoplanets](https://exoplanets.guinetik.com)
-- [Penrose JS](https://guinetik.github.io/penrose-js)
+<img width="100%" alt="Most Used Languages" src="https://guinetik-github-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=10&theme=nord&layout=compact&count_private=true&cache_seconds=1800&hide_border=true&bg_color=2e3440" />
+
+<img width="100%" alt="Wakatime" src="https://guinetik-github-stats.vercel.app/api/wakatime?username=guinetik&theme=nord&count_private=true&cache_seconds=1800&langs_count=16&layout=compact&hide_border=true&bg_color=2e3440" />
+
+<img width="100%" alt="Github Stats" src="https://guinetik-github-stats.vercel.app/api?username=guinetik&show_icons=true&theme=nord&count_private=true&hide=issues,contribs&hide_border=true&bg_color=2e3440" />
+
+<img width="100%" alt="Github Streaks" src="https://github-readme-streak-stats.herokuapp.com/?user=guinetik&count_private=true&theme=nord&hide_border=true&background=2e3440" />
+
+<img width="100%" alt="Contributions" src="https://github-readme-activity-graph.vercel.app/graph?username=guinetik&hide_border=true&theme=nord&bg_color=2e3440" />
+
+## Projects
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://exoplanets.guinetik.com/">
+<img src="https://admin.guinetik.com/files/exoplanets1.webp" width="100%"/>
+</a>
+<h3><a href="https://exoplanets.guinetik.com/">Exoplanets</a></h3>
+<p>Exploring 6,000+ confirmed worlds beyond our solar system. Interactive 3D visualizations of NASA's exoplanet data.</p>
+<code>ReactJs</code> <code>Tailwind CSS</code> <code>Firebase</code> <code>ThreeJS</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://wikipedia.guinetik.com">
+<img src="https://admin.guinetik.com/files/wikipedia.webp" width="100%"/>
+</a>
+<h3><a href="https://wikipedia.guinetik.com">Wikipedia Search</a></h3>
+<p>Small wikipedia search app that uses the Wikimedia API to search articles.</p>
+<code>Svelte</code> <code>Tailwind CSS</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://graphjs.guinetik.com">
+<img src="https://admin.guinetik.com/files/graphjs.webp" width="100%"/>
+</a>
+<h3><a href="https://graphjs.guinetik.com">GraphJS</a></h3>
+<p>A high-performance graph theory Javascript Library with interactive demos and worker-first architecture.</p>
+<code>Network Analysis</code> <code>Graph Theory</code>
+</td>
+</tr>
+</table>
+
+### Advertising Projects (Ogilvy 2012-2014)
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://vimeo.com/40519663">
+<img src="https://guinetik.com/static/happiness-refill.jpg" width="100%"/>
+</a>
+<h3><a href="https://cargocollective.com/guinetik/">Coke Happiness Refill</a></h3>
+<p>The first soda dispenser machine that gives free data credits. An Arduino machine that allows users to connect their phone to their Wifi. </p>
+<code>Creative Tech</code> <code>Android</code> <code>Java</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://vimeo.com/68697167">
+<img src="https://guinetik.com/static/billboard-fan-check-machine.jpg" width="100%"/>
+</a>
+<h3><a href="https://vimeo.com/68697167">Billboard Fan Check Machine</a></h3>
+<p>A machine that gives away a free magazine if you prove you're a fan of the artist on the cover.</p>
+<code>Raspberry Pi</code> <code>C++</code> <code>Arduino</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://www.youtube.com/watch?v=BBhNadcL4B0">
+<img src="https://guinetik.com/static/billboard-magazine.jpg" width="100%"/>
+</a>
+<h3><a href="https://www.youtube.com/watch?v=BBhNadcL4B0">Billboard NFC Magazine</a></h3>
+<p>NFC-enabled magazine pages that triggered interactive digital content when tapped with smartphones.</p>
+<code>NFC Tags</code> <code>Angular</code>
+</td>
+</tr>
+</table>
+
+## Github Demos
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://toastman.guinetik.com">
+<img src="https://admin.guinetik.com/files/toastman.webp" width="100%"/>
+</a>
+<h3><a href="https://toastman.guinetik.com">ToastMan</a></h3>
+<p>A lightweight API testing tool built with Vue 3. Think Postman, but simpler and without the bloat.</p>
+<code>Vue 3</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://sandboxjs.guinetik.com">
+<img src="https://admin.guinetik.com/files/sandboxjs.webp" width="100%"/>
+</a>
+<h3><a href="https://sandboxjs.guinetik.com">SandboxJS</a></h3>
+<p>A modular JavaScript sandbox for testing and experimenting with code in a safe, isolated environment.</p>
+<code>Vanilla JS</code> <code>ACE Editor</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://pyscript.guinetik.com">
+<img src="https://guinetik.com/static/pyscript.webp" width="100%"/>
+</a>
+<h3><a href="https://pyscript.guinetik.com">PyScript L.A.B</a></h3>
+<p>Experiments running python on the browser.</p>
+<code>Python</code> <code>Tailwind CSS</code> <code>Svelte</code>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://py-home-gallery.onrender.com/">
+<img src="https://guinetik.com/static/pygallery.webp" width="100%"/>
+</a>
+<h3><a href="https://py-home-gallery.onrender.com/">Python Home Gallery</a></h3>
+<p>Simple photo/video gallery using Isotope with autogenerated thumbnails via ffmpeg.</p>
+<code>Python</code> <code>FFmpeg</code> <code>Nginx</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://terminaljavadocs.guinetik.com">
+<img src="https://terminaljavadocs.guinetik.com/images/og-image.png" width="100%"/>
+</a>
+<h3><a href="https://terminaljavadocs.guinetik.com">Terminal Java Docs</a></h3>
+<p>Alternative presentation for Java documentation</p>
+<code>Java</code> <code>Maven</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://hexafun.guinetik.com">
+<img src="https://hexafun.guinetik.com/images/og-image.png" width="100%"/>
+</a>
+<h3><a href="https://hexafun.guinetik.com">HexaFun</a></h3>
+<p>Functional primitives for coding Hexagonal Architecture in Java</p>
+<code>Java</code> <code>Hexagonal Architecture</code>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://cryptowasm.guinetik.com/">
+<img src="https://admin.guinetik.com/files/cryptowasm.webp" width="100%"/>
+</a>
+<h3><a href="https://cryptowasm.guinetik.com/">crypto.wasm</a></h3>
+<p>WebAssembly cryptography library featuring AES-128-CBC, XOR, Caesar cipher, ROT13, and Base64 encoding.</p>
+<code>WebAssembly</code> <code>Rust</code> <code>Typescript</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://guinetik.github.io/penrose-js/">
+<img src="https://admin.guinetik.com/files/penrosejs.webp" width="100%"/>
+</a>
+<h3><a href="https://guinetik.github.io/penrose-js/">Penrose-JS</a></h3>
+<p>Pure JS implementations of the Penrose Tiling. Renders in canvas or bitmap.</p>
+<code>Javascript</code> <code>Generative Art</code>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/guinetik/amh2w">
+<img src="https://guinetik.com/static/amh2w.jpg" width="100%"/>
+</a>
+<h3><a href="https://github.com/guinetik/amh2w">AMH2W</a></h3>
+<p>All my Homies Hate Windows - A Powershell utility library for Windows 10/11.</p>
+<code>PowerShell</code> <code>ACE Editor</code>
+</td>
+</tr>
+</table>
 
 ## Talks and Older stuff
 
-- [Echo Chambers - 2024](https://pitch.com/v/echo-chambers-no-colab-an5xra)
-- [Java Unit Testing - 2024](https://pitch.com/public/ea9b56c1-c003-4b59-9f30-23f6da64a563)
-- [Testes de Carga com Postman - 2024](https://docs.google.com/presentation/d/1dHSKsH5S1SKCSgJNQPHf2LN-korjOJBp/edit?usp=sharing&ouid=109727319701909715868&rtpof=true&sd=true)
-- [Git GUD - 2018](https://slides.com/guinetik/gitgud)
-- [Epihack 2015](https://slides.com/guinetik/epihack2015)
-- [Digital After all - 2013](https://slides.com/guinetik/digital-after-all)
-- [Cargo Collective](https://cargocollective.com/guinetik/)
-
-## Me & code
-
-<div
-  class="parent"
-  style="
-    display: grid;
-    grid-auto-flow: column;
-    align-items: stretch;
-    justify-items: stretch;
-  "
->
-  <div class="div1" style="grid-area: 1 / 1 / 2 / 3">
-    <img
-      alt="Waka Time"
-      width="100%"
-      src="https://github-readme-stats.vercel.app/api/wakatime?username=guinetik&theme=github_dark&count_private=true&cache_seconds=1800&layout=compact"
-    />
-  </div>
-
-  <div class="div2" style="grid-area: 1 / 3 / 3 / 5; padding-left: 10px">
-    <img
-      alt="Most used Languages"
-      width="100%"
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=guinetik&langs_count=10&theme=blueberry&layout=compact&count_private=true&cache_seconds=1800"
-    />
-    <img
-      width="100%"
-      alt="Github Stats"
-      src="https://github-readme-stats.vercel.app/api?username=guinetik&show_icons=true&theme=blueberry&count_private=true&hide=issues,contribs"
-    />
-  </div>
-  <div class="div3" style="grid-area: 2 / 1 / 3 / 5; margin-top: 5%">
-    <img
-      width="100%"
-      style="border: 0.12em solid #ccc; border-radius: 0.5em"
-      alt="Contributions"
-      src="https://activity-graph.herokuapp.com/graph?username=guinetik&bg_color=0D1117&color=8266f2&line=8266f2&point=ba66f2&hide_border=true"
-    />
-    <img
-      width="100%"
-      alt="Github Streaks"
-      style="border: 0.12em solid #ccc; border-radius: 0.5em"
-      src="https://github-readme-streak-stats.herokuapp.com/?user=guinetik&langs_count=8&count_private=true&layout=compact&theme=blueberry&hide_border=true"
-      style="border: 2px; border-radius: 25px"
-    />
-  </div>
-</div>
-</div>
-<br/>
-<br/>
+| Talk | Year |
+|------|------|
+| [Echo Chambers](https://pitch.com/v/echo-chambers-no-colab-an5xra) | 2024 |
+| [Java Unit Testing](https://pitch.com/public/ea9b56c1-c003-4b59-9f30-23f6da64a563) | 2024 |
+| [Testes de Carga com Postman](https://docs.google.com/presentation/d/1dHSKsH5S1SKCSgJNQPHf2LN-korjOJBp/edit?usp=sharing&ouid=109727319701909715868&rtpof=true&sd=true) | 2024 |
+| [Git GUD](https://slides.com/guinetik/gitgud) | 2018 |
+| [Epihack](https://slides.com/guinetik/epihack2015) | 2015 |
+| [Digital After all](https://slides.com/guinetik/digital-after-all) | 2013 |
+| [Cargo Collective](https://cargocollective.com/guinetik/) | Archive |
