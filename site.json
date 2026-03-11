@@ -10,11 +10,6 @@
         "link": "#about"
       },
       {
-        "title": "Code & Me",
-        "id": "code",
-        "link": "#code"
-      },
-      {
         "title": "Featured Projects",
         "id": "projects",
         "link": "#projects"
@@ -23,6 +18,11 @@
         "title": "GitHub Demos",
         "id": "demos",
         "link": "#demos"
+      },
+      {
+        "title": "Code & Me",
+        "id": "code",
+        "link": "#code"
       },
       {
         "title": "GitHub Repos",
