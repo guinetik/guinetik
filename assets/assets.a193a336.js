@@ -1,0 +1,1 @@
+const r="/static".replace(/\/+$/,"");function s(e){if(!e||/^(?:[a-z][a-z0-9+.-]*:)?\/\//i.test(e)||e.startsWith("data:"))return e;const t=e.replace(/^\/?static\//,"").replace(/^\/+/,"");return`${r}/${t}`}export{s as a};

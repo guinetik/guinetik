@@ -127,7 +127,7 @@
     },
     {
       "title": "SVG Animated Gradient",
-      "url": "https://github.com/guinetik/guinetik/raw/master/header.svg",
+      "url": "/static/header.svg",
       "type": "img",
       "link": "https://codepen.io/guinetik/full/XJWOgmN"
     }
@@ -138,14 +138,14 @@
       "header": "Hello world! This is Guinetik",
       "subheader": "I am a Software Architect and Creative Coder",
       "aside": "🌎 FORTALEZA, BRAZIL",
-      "content": "<p>🤓 I'm an eclectic coder with an agnostic view in software engineering.</p><p>💼 I have over 10 years of experience coding for advertising, banking, public health and HR spaces.</p><p>🏬 I've worked at <a href=\"https://cappen.com\" rel=\"nofollow\">Cappen</a>, <a href=\"https://ogilvy.com.br\" rel=\"nofollow\">Ogilvy</a>, <a href=\"https://accenture.com\" rel=\"nofollow\">Accenture</a>, <a href=\"https://vanhack.com\" rel=\"nofollow\">VanHack</a>, <a href=\"https://crossover.com\" rel=\"nofollow\">Crossover</a>, <a href=\"https://epitrack.com.br\" rel=\"nofollow\">Epitrack</a> and <a href=\"https://foursys.com.br\" rel=\"nofollow\">Foursys</a>.</p><p>🧑‍💻 I'm currently working at <strong><a href=\"https://banco.bradesco\" rel=\"nofollow\">Bradesco</a></strong>.</p><p>⚙️ I do mostly software architecture focused on application development for the web.</p><p>🌱 Learning <strong>Data Science</strong> and <em>Rust</em>.</p><p>💬 Let's talk about <code>java</code>, <code>nodejs</code>, <code>frontend</code>, <code>data science</code> &amp; <code>devops</code>.</p><p>📫 Hit me up on: <a href=\"mailto:guinetik@gmail.com\">guinetik@gmail.com</a></p><p>🕹️ I'm into tech, games, infotainment and geek culture.</p>"
+      "content": "<p class=\"bio-lead\"><span class=\"bio-mark\" aria-hidden=\"true\">🤓</span><b class=\"bio-open\">Hello, friend.</b> I&rsquo;m a Full Stack Software Engineer proficient in language-agnostic, framework-agnostic, curiosity-driven development.</p><p class=\"bio-voice\"><span class=\"bio-mark\" aria-hidden=\"true\">✨</span>Ever since I was a kid I was fascinated by coding&mdash;turning written word into action felt like a sorcerer casting a spell. With AI, that fascination has a new name: agency. Written language that reasons, adapts, decides.</p><p class=\"bio-fact\"><span class=\"bio-mark\" aria-hidden=\"true\">💼</span>10+ years building systems across advertising, banking, public health, HR, and fintech.</p><p class=\"bio-fact\"><span class=\"bio-mark\" aria-hidden=\"true\">🏬</span>I&rsquo;ve worked at <a href=\"https://cappen.com\" rel=\"nofollow\">Cappen</a>, <a href=\"https://ogilvy.com.br\" rel=\"nofollow\">Ogilvy</a>, <a href=\"https://accenture.com\" rel=\"nofollow\">Accenture</a>, <a href=\"https://vanhack.com\" rel=\"nofollow\">VanHack</a> (Staffeto), <a href=\"https://crossover.com\" rel=\"nofollow\">Crossover</a>, <a href=\"https://epitrack.com.br\" rel=\"nofollow\">Epitrack</a>, <a href=\"https://foursys.com.br\" rel=\"nofollow\">Foursys</a>.</p><p class=\"bio-fact\"><span class=\"bio-mark\" aria-hidden=\"true\">🧑‍💻</span>I&rsquo;m currently at <a href=\"https://banco.bradesco\" rel=\"nofollow\">Bradesco</a>&mdash;software architecture, AI agents, RAG, and core banking systems.</p><p class=\"bio-fact\"><span class=\"bio-mark\" aria-hidden=\"true\">⚙️</span>Software architecture, web apps, AI modernization (Cobol&rarr;Java), and vendor management.</p><p class=\"bio-fact\"><span class=\"bio-mark\" aria-hidden=\"true\">🌱</span>Learning <strong>Data Science</strong>, <em>Rust</em>, and AI/LLMs.</p><p class=\"bio-fact\"><span class=\"bio-mark\" aria-hidden=\"true\">💬</span>Let&rsquo;s talk about <code>java</code>, <code>nodejs</code>, <code>angular</code>, <code>ai</code>, <code>rag</code>, <code>devops</code> &amp; <code>data science</code>.</p><p class=\"bio-fact\"><span class=\"bio-mark\" aria-hidden=\"true\">📫</span>Hit me up: <a href=\"mailto:guinetik@gmail.com\">guinetik@gmail.com</a></p><p class=\"bio-fact\"><span class=\"bio-mark\" aria-hidden=\"true\">🕹️</span>Tech, games, infotainment, and geek culture.</p>"
     },
     "demos": {
       "cards": [
         {
           "title": "ToastMan",
           "description": "A lightweight API testing tool built with Vue 3. Think Postman, but simpler and without the bloat.",
-          "image": "/static/toastman.jpg",
+          "image": "/static/toastman.webp",
           "link": "https://guinetik.github.io/ToastMan/",
           "tags": [
             {
@@ -157,7 +157,7 @@
         {
           "title": "SandboxJS",
           "description": "A modular JavaScript sandbox for testing and experimenting with code in a safe, isolated environment.",
-          "image": "/static/sandboxjs.jpg",
+          "image": "/static/sandboxjs.webp",
           "link": "https://guinetik.github.io/sandboxjs/",
           "tags": [
             {
@@ -189,7 +189,7 @@
         {
           "title": "Svelte Wikipedia Search",
           "description": "Small wikipedia search app that uses the Wikimedia API to search articles. Features internationalization, dark mode and fetching the top posts of the day.",
-          "image": "/static/wikipedia.jpg",
+          "image": "/static/wikipedia.webp",
           "link": "https://wikipedia.guinetik.com",
           "tags": [
             {
@@ -205,7 +205,7 @@
         {
           "title": "Exoplanets Review",
           "description": "Aid for a search for a habitable planet. Discover and review exoplanets confirmed by the TESS probe. Post your comments and reviews about the planet.",
-          "image": "/static/exoplanets.jpg",
+          "image": "/static/exoplanets.webp",
           "link": "https://exoplanets.guinetik.com/",
           "tags": [
             {
@@ -225,7 +225,7 @@
         {
           "title": "PyScript L.A.B",
           "description": "Experiments running python on the browser.",
-          "image": "/static/pyscript.jpg",
+          "image": "/static/pyscript.webp",
           "link": "https://guinetik.github.io/python-ds",
           "tags": [
             {
@@ -247,14 +247,10 @@
     "repos": {
       "cards": [
         "colab-network-ec",
-        "kepler-exoplanets-review",
-        "gui-configs",
         "rust-kvstore",
         "rust-box",
-        "vanguard-js",
         "blockchain-ts",
         "tempo-cc-backend",
-        "python-ds",
         "epihack",
         "epihack-appgen",
         "sails-studies",
@@ -272,7 +268,7 @@
         {
           "title": "Bradesco Mortgage Engine (2017-2025)",
           "description": "As a Software Architect for Foursys, I currently serve in the Bradesco Mortgage Engine where clients could simulate, contract and update their mortgage contracts. The engine is powered by Spring Boot microservices that integrate with the Bank's core systems, an intermediary Backend-For-Frontend layer built on NodeJS/Express and an Angular frontend.",
-          "image": "/static/crim.jpg",
+          "image": "/static/crim.webp",
           "link": "https://banco.bradesco/html/classic/produtos-servicos/emprestimo-e-financiamento/imoveis/index.shtm",
           "tags": [
             {
@@ -292,7 +288,7 @@
         {
           "title": "Mãos Conecta App (2021)",
           "description": "Visual Recognition search app for Artesan Brasil. This PWA built with Angular, connected to a JHipster backend allows the users to visually search for artworks from the Artesan Marketplace. Computer vision services powered by Azure Cognitive.",
-          "image": "/static/maos-conecta.jpg",
+          "image": "/static/maos-conecta.webp",
           "link": "https://app.maosconecta.com.br/",
           "tags": [
             {
@@ -312,7 +308,7 @@
         {
           "title": "Brasil Sem Corona (2021)",
           "description": "Digital Epidemiology app built during the pandemic. Based on Spring and Spring Data, this app generated reports and metrics based on self-reports of symptoms submitted through the Colab.re App. Data generated was used for academic studies on the COVID-19 pandemic.",
-          "image": "/static/brasil-sem-corona.jpg",
+          "image": "/static/brasil-sem-corona.webp",
           "link": "https://brasilsemcorona.com.br/",
           "tags": [
             {
@@ -356,7 +352,7 @@
         {
           "title": "Santander Mortgage Engine (2019)",
           "description": "While working for Accenture, I was in the Architecture team for the Santander Mortgage Engine where clients could simulate, contract and update their mortgage contracts. We created a Docker Swarm based infrastructure, with an Angular frontend and a Java Microservices based API powered by Spring Boot. Front/Backend communication is powered by GraphQL.",
-          "image": "/static/webcasas.jpg",
+          "image": "/static/webcasas.webp",
           "link": "https://www.negociosimobiliarios.santander.com.br/negociosimobiliarios/",
           "tags": [
             {
@@ -380,7 +376,7 @@
         {
           "title": "Epihack Rio (2015)",
           "description": "Epihack is a hackathon that involves epidemiologists and developers to create new approaches for digital disease detection. The first edition in Brazil was focused on Mass Gatherings tools to minimize risks during this kind of event. Epihack was supported by Skoll Global Threats Fund and organized by Epitrack with partnership of Instedd and Opendream.",
-          "image": "/static/epihack.jpg",
+          "image": "/static/epihack.webp",
           "link": "https://www.youtube.com/watch?v=SzLGD2MBV34",
           "tags": [
             {
